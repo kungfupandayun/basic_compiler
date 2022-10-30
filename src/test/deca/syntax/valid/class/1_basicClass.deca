@@ -1,0 +1,13 @@
+/* Description:
+     tester class avec simple field et method
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class  newclass {
+    int x;
+
+    int getX(){
+    }
+   }

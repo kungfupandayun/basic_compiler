@@ -1,0 +1,21 @@
+/*
+	Description: declaration une methode dans main
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+{
+	
+
+	 void hello( ){
+	  	print("hello");
+	}
+	
+
+
+}

@@ -1,0 +1,20 @@
+/*
+	Description: nom de class avec des nombres
+
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class 123 extends b{
+	
+
+	protected void hello( ){
+		print("hello");
+	}
+	
+}

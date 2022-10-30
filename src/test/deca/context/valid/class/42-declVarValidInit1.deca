@@ -1,0 +1,25 @@
+/* Description:
+    teste la regle (3.16) (3.17) de la vérification contextuelles
+    Déclaration de variables avec initialisation
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  protected int a;
+  int b;
+  void methode1(int a,int b){   //chaque methode a son propre EnvironmentExp
+    B c = new B(); // le type B est dans l'environment type
+    }
+}
+class B extends A{
+  B b;
+  void methode1(int a, int b){ // une redifinition de la methode
+    int f = b;
+  }
+
+}
+class C extends B{
+
+}

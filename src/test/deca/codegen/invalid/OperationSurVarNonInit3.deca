@@ -1,0 +1,13 @@
+/* Description:
+    Tester des opérations arithmétiques avec des variables non initialisée
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+
+*/
+{
+	int x;
+  int a = x /2;
+}

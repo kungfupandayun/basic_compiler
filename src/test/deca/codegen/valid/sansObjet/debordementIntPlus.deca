@@ -1,0 +1,13 @@
+/* Description:
+    Tester le débordement d'une somme
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu: -2147483647
+
+
+*/
+{
+	int a = 2147483647 + 1;
+  print(a);
+}

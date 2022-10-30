@@ -1,0 +1,12 @@
+/* Description:
+    teste la regle (3.13) (3.12) de la vérification contextuelles
+    Déclaration de paramètre prédefinie
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int methode(){} // une methode avec 0 param est valid
+
+}

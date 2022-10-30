@@ -1,0 +1,43 @@
+/* Description:
+    Tester condition avec ou operation
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	ok
+	ok
+	ok
+	ok
+
+*/
+
+{	int x;
+	if(false || false){
+		println("erreur");
+	} else{ 
+		x = 1;
+		println("ok");
+	}
+
+	if(true || false){
+		println("ok");
+	} else{ 
+		x = 1;
+		println("erreur");
+	}
+
+	if(false || true){
+		println("ok");
+	} else{ 
+		x = 1;
+		println("erreur");
+	}
+
+	if(true || true){
+		println("ok");
+	} else{ 
+		x = 1;
+		println("erreur");
+	}
+
+}

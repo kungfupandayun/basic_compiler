@@ -1,0 +1,20 @@
+/* Description:
+    un exemple d'un programme utilisant une methode assembleur
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+class A {
+    protected int x;
+    void load()
+      asm ("LOAD #2, R0");
+    void mutliligne()
+      asm ("LOAD #0 , R0 ");
+  }
+{
+    A a = new A();
+    a.load();
+}

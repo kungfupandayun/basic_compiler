@@ -1,0 +1,17 @@
+/*
+			Test => 			Type ListDeclVar ;
+
+	Résultat=>	syntaxe valid
+	Ident a , e , h ,k => null
+	Les restes sont initialisé avec une valeur valide corresponde à leur type;
+
+	Date=>	17/1/2020
+*/
+
+{
+int 	a, b=2, c=b;
+float 	e, f=5.50, g=f;
+string 	h, i="efgh" ,j=i;
+boolean	k,l=true,m=l;
+
+}

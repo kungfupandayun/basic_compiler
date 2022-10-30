@@ -1,0 +1,23 @@
+/* Description:
+    tester class qui possede de méthod invalide
+    (dans le super class, le nom de méthode existe mais le type retourné n'est pas correcte)
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   class A {
+
+    int get(int x){
+
+    }
+
+
+   }
+   class B extends A {
+
+    float get(int x){
+
+    }
+
+   }

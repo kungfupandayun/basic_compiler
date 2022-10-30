@@ -1,0 +1,20 @@
+/* Description:
+    Declaration d'un class
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	3
+
+*/
+
+class Point2D {
+	int x = 1; // Abscisse
+	int y = 2; // Ordonnee
+}
+{
+	Point2D p1;
+	p1 = new Point2D();
+	p1.x = 3;
+	println(p1.x);
+}

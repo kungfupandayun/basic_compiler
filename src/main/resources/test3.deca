@@ -1,0 +1,24 @@
+class hello{
+
+    int superman(int a,int b){
+        int z=3;
+        if(b>z)
+        {return z;}
+        else {return a;}
+    }
+
+  
+}
+
+
+{
+	int d=0;
+    int a=123;
+    int c=2;
+  
+
+    hello x=new hello();
+    c=x.superman(2,4);
+    print("c=>",c);
+  
+}

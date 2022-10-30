@@ -1,0 +1,13 @@
+/* Description:
+    Tester le débordement d'une division
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+
+*/
+{
+	float a = (2147483647 + 1)/(2147483647/0.5);
+  print(a);
+}

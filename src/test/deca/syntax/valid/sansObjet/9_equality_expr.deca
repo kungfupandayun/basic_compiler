@@ -1,0 +1,16 @@
+/*
+	Test =>  equality expression valide
+
+	Résultat=> syntaxe valid, context valid
+
+	Date=>	17/1/2020
+*/
+
+
+{
+	5 == x ;
+	5 != y;
+	5 == - - 1;
+	5  != true;
+
+}

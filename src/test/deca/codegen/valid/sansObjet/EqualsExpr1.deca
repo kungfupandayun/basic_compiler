@@ -1,0 +1,20 @@
+/* Description:
+    Tester l'operateur 'OR' (test simple avec and)
+
+    Historique:
+      cree le 24/01/2020
+    Sortie attendu:
+
+
+*/
+
+
+
+{
+  int x = 5;
+  boolean y = true == true;
+  if (y){
+    print("ok");
+  }
+
+}

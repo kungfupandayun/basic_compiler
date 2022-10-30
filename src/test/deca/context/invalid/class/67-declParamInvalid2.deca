@@ -1,0 +1,18 @@
+/* Description:
+    teste la regle (3.12) de la vérification contextuelles
+    Déclaration de paramètres qui n'est pas prédefinie
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int methode(C a, B b, Object c, C d, string name){} // Erreur au nivau de string, le type string n'est pas prédefinie
+}
+
+class C {
+
+}
+class B {
+
+}

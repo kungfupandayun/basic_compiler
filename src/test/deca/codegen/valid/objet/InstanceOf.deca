@@ -1,0 +1,22 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	ok
+
+*/
+
+class A { }
+class B extends A { }
+class C extends B { }
+{
+	A a;
+	B b;
+	a = new C();
+	if (a instanceof B) {
+	b = (B)(a);
+		println("ok");
+	}
+}

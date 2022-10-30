@@ -1,0 +1,21 @@
+/* Description:
+     tester class qui possede de méthod invalide
+     (dans le super class, le nom de méthode existe mais correspond pas à une méthode)
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+   class A {
+
+    int getX;
+   }
+
+   class B extends A {
+
+    int getX (){
+        x + 2;
+    }
+
+
+   }

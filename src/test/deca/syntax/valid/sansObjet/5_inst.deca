@@ -1,0 +1,36 @@
+/*
+	Test => Inst
+					actions (ifThenElse, Print, While, ; , expr)
+
+	Résultat=> syntaxe valid
+
+	Date=>	17/1/2020
+*/
+
+{
+	expr;
+
+	;
+
+	print(i <= 32  && 12, 10 >= 32 + 23);
+	println(i <= 32  && 12, 10 >= 32 + 23);
+	printx(i <= 32  && 12, 10 >= 32 + 23);
+	printlnx(i <= 32  && 12, 10 >= 32 + 23);
+
+	if( 10+2)
+	{
+		5+7;
+	}
+	else if(hello){
+		true;
+	}
+	else{
+		"hello";
+	}
+
+	while(2+3)
+	{
+		printx(i <= 32  && 12, 10 >= 32 + 23);
+	}
+
+}

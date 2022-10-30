@@ -1,0 +1,13 @@
+/* Description:
+    tester l'utilisation d'une variable non initialisée
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+
+*/
+{
+  float a;
+  print(a+5);
+}

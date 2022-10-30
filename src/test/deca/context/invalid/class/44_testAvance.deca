@@ -1,0 +1,32 @@
+/* Description:
+    test invalide avec incorrecte signature
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  float a = 0;
+  void setA(float a){
+    this.a = a;
+  }
+
+}
+
+class C extends A{
+  void setC(float a){
+    this.a = a;
+  }
+
+  void setB(C a, float x){
+    a.setC(x);
+  }
+}
+
+{
+  C c = new C();
+
+  c.setC(0);// Correcte ici
+  c.setB(new A(), 1.2); // Incorrect
+
+}

@@ -1,0 +1,4 @@
+// ce test permet de tester une déclaration de variable avec une initialization
+{
+  int y = 4;
+}

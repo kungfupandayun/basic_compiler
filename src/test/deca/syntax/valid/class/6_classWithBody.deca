@@ -1,0 +1,24 @@
+/* Description:
+    declaration d'une class avec declaration de méthode
+     (correct syntaxiquement)
+
+    Historique:
+      cree le 20/01/2020
+*/
+
+  class A
+  {
+    int getA(){}
+  }
+  class B extends A
+  {
+    void methodB(int a, int b){}
+  }
+  class C extends B
+  {
+    void methodeC(float a, float c){}
+  }
+  class D extends C
+  {
+    float methodeD(int d, float e){}
+  }

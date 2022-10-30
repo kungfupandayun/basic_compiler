@@ -1,0 +1,11 @@
+/* Description:
+    un programme simple fournie dans les slides
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     erreur pendant la passe 2 (A n'est pas déclarée)
+*/
+{
+  A a;
+}

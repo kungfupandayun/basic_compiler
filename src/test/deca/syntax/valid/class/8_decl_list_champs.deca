@@ -1,0 +1,16 @@
+/*
+	Description: tests declarations une list de champs
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+
+class spiderman {
+
+		captain ame=rica,batman=123, powerpuffgirl=123.123 ;
+
+
+}

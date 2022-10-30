@@ -1,0 +1,32 @@
+/*
+	Description: tests this and selection of a method and a field
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+
+
+*/
+
+
+
+class a{
+
+  chello c=new chello();
+  int hello(){
+    this.c=hello;
+    x=c.hello();
+    return c;
+  }
+
+}
+
+
+
+{
+  hello z=new hello();
+  z=c.y();
+  z.y=k;
+  this.x=x;
+  return y;
+}

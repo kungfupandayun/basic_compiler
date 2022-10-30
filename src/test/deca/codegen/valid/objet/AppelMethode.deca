@@ -1,0 +1,22 @@
+/*
+	Utilisation des variables déclaré avec &&
+*/
+
+class A{
+  int a;
+	 int getM(int c){
+	println(c);
+	this.a = c;
+	println(this.a);
+    	return this.a;
+	}
+  int getB(int b){
+    return b;
+  }
+}
+
+{
+A a=new A();
+println(a.getM(a.getB(5)));
+
+}

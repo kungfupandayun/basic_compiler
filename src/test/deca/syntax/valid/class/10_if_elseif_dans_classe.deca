@@ -1,0 +1,23 @@
+/*
+	Description: test if else if dans une classe
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+
+
+class A{ 
+
+   void hello(){
+	if(a==1){
+		x=y;
+	} else if (a==2){
+		x=t;
+	}
+	}
+	
+}
+

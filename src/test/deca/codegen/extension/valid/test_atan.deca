@@ -1,0 +1,57 @@
+/* Test arc tangent pour val< -1
+   Test arc tangent pour val== -1 
+   Test arc tangent pour val>-1 && val<0
+   Test arc tangent pour val== 0
+   Test arc tangent pour val>0 && val<1
+   Test arc tangent pour val==1
+   Test arc tangent pour val>1
+ */
+
+
+
+ #include "Math.decah"
+
+ {  
+     Math m=new Math();
+     float a,b,c,d,e,f,g,h,i,j,k,l;
+
+     a= m._atan(-23.0);
+     println("val _atan -23 =>",a);
+     println("sa val réelle=>","-1.527345431");
+
+     b= m._atan(-1.0);
+     println("val _atan -1 =>",b);
+     println("sa val réelle=>","-0.785398163");
+
+     c= m._atan(-0.898);
+     println("val  _atan -0.898 =>",c);
+     println("sa val réelle=>","-0.731709029");
+
+     d= m._atan(0.0);
+     println("val _atan 0 =>",d);
+     println("sa val réelle=>","0");
+
+     e= m._atan(0.23);
+     println("val _atan 0.23=>",e);
+     println("sa val réelle=>","0.226068388");
+
+     f= m._atan(1.0);
+     println("val _atan 1 =>",f);
+     println("sa val réelle=>","0.785398163");
+
+     g= m._atan(3.898);
+     println("val _atan 3.898 =>",g);
+    println("sa val réelle=>","1.3196702");
+
+     h= m._atan(1.570796327);
+     println("val _atan pi/2 =>",h);
+     println("sa val réelle=>","1.003884822");
+
+     i= m._atan(999);
+     println("val _atan pi/2 =>",i);
+     println("sa val réelle=>","1.570132613");
+
+
+
+
+ }

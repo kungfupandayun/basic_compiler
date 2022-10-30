@@ -1,0 +1,16 @@
+/* Description:
+     tester class qui possede de method  invalid
+     le parametre est de type void
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+
+    void getX (void x){
+
+    }
+
+
+   }

@@ -1,0 +1,16 @@
+/*
+	Description: declaration class sans indentité
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class {
+	
+	int x;
+	
+}

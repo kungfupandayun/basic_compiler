@@ -1,0 +1,31 @@
+/* Description:
+    le test qui mélange certaines utilisation pour objet et sans objet
+
+    Historique:
+      cree le 23/01/2020
+*/
+
+class A {
+
+  int x = 5;
+  boolean M = true;
+
+  boolean getM() {
+
+    if (this.x>4){
+      return M;
+    } else {
+      return false;
+    }
+
+  }
+}
+
+{
+  A a= new A();
+  a.x = 5;
+  if(a.getM()){
+    println("OK!!!");
+  }
+
+}

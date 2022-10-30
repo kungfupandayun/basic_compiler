@@ -1,0 +1,18 @@
+/* Description:
+    Programme vide
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+
+{
+  printlnx(18.9);
+  println(18);
+  println();
+  printlnx(16.8);
+  println();
+  println(16.8);
+
+}

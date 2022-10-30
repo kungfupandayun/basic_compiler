@@ -1,0 +1,17 @@
+/*
+	Description: declaration of main before class
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+{
+
+	print("hello");
+}
+
+class a extends b{
+	
+}

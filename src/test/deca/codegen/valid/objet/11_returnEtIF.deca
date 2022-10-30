@@ -1,0 +1,22 @@
+/* Description:
+    combine le boolean retourné et le structure if
+
+    Historique:
+      cree le 23/01/2020
+*/
+
+class A {
+
+  boolean M = true;
+  boolean getM() {
+      return M;
+  }
+
+}
+
+{
+  A a= new A();
+  if (a.getM()){
+    println("Bravo!");
+  }
+}

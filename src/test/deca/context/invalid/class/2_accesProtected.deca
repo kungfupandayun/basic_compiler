@@ -1,0 +1,17 @@
+/* Description:
+    Tester l'accés au champs protégés d'une classe.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+*/
+
+class Test{
+    protected float a;
+}
+
+{
+	Test classe = new Test();
+  classe.a = 0;
+}

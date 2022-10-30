@@ -1,0 +1,14 @@
+/* Description:
+    teste la regle (3.7) de la vérification contextuelles
+    Déclaration de champ avec initialisation incompatibles
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  float x;
+  int a = x; // assing incompatible entre float et int
+
+
+}

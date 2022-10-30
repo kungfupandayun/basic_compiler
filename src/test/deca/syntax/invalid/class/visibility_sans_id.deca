@@ -1,0 +1,18 @@
+/*
+	Description: declaration une methode sans les paranthèses de paramètre
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class a{
+	
+
+	protected z= 23;
+
+
+}

@@ -1,0 +1,27 @@
+/* Description:
+    teste la regle (3.17) (3.16) de la vérification contextuelles
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  C c;
+  void methode(){
+
+    B d;
+  }
+}
+
+class C extends A{
+
+  void methode(){
+    B c;
+  }
+
+}
+class B {
+
+}

@@ -1,0 +1,18 @@
+/* Description:
+    Tester la lecteur d'un flotent
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    okokokokokokokokokok
+
+*/
+
+
+
+{
+  float y;
+  
+
+
+}

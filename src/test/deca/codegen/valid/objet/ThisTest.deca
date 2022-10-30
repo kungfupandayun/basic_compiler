@@ -1,0 +1,23 @@
+/* Description:
+    test l'utilisation de this
+
+    Historique:
+      cree le 21/01/2020
+    Résultat attendu:
+
+*/
+
+class A {
+  int x=2;
+  void setX(int a){
+    this.x = a;
+  }
+}
+
+
+{
+  A a = new A();
+ println(a.x);
+  a.setX(5);
+  println(a.x); // affiche 5
+}

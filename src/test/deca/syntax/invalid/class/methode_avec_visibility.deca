@@ -1,0 +1,18 @@
+/*
+	Description: decl methode avec visibility
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class a extends b{
+	
+
+	protected void hello(){
+		print("hello");
+	}
+}

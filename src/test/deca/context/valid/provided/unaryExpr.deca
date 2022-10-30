@@ -1,0 +1,13 @@
+/* Description:
+     tester l'affichage expression unitaire
+
+    Historique:
+      cree le 08/01/2020
+*/
+{
+   int x =2 ;
+   boolean y ;
+
+   !y;
+   -x;
+}

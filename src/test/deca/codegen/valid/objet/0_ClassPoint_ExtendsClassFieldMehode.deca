@@ -1,0 +1,31 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+
+class Point2D {
+	int x=1; // Abscisse
+	int y=2; // Ordonnee
+	// Deplace ce point
+	// de a en diagonale.
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+	}
+}
+
+class Point3D extends Point2D {
+	int z; // Hauteur
+	// On redefinit la methode diag,
+	// pour tenir compte de z
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+		z = z + a;
+	}
+}
+

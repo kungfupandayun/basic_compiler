@@ -1,0 +1,26 @@
+/* Description:
+    un programme simple fournie dans les slide
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+class A{
+  B b;
+}
+class B{
+  A a;
+}
+class Parcours {
+  void parcoursA(A a){
+      if (a != null){
+        parcoursB(a.b);
+      }
+    }
+  void parcoursB(B b){
+      if (b != null){
+        parcoursA(b.a);
+      }
+  }
+}

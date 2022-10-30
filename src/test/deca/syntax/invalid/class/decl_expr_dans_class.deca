@@ -1,0 +1,18 @@
+/*
+	Description: declaration d'une list expression dans class
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+
+
+*/
+
+
+
+class a {
+
+	12>32;
+	kl==hello;
+}
+

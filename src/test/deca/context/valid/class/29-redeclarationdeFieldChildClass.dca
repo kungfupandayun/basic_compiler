@@ -1,0 +1,20 @@
+/* Description:
+    teste la regle (2.4) en cas de redéclaration de champ valide avec des type different
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+
+  C field;
+
+}
+
+class B extends A {
+  int field;
+}
+
+class C {
+
+}

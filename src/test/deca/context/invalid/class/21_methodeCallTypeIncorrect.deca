@@ -1,0 +1,24 @@
+/* Description:
+    test invalide en utilisant methodeCall
+    (la methode appelé n' appartient pas à le variable qui l'appelle)
+
+
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   class A {
+    int y = 4;
+
+      int getY() {
+        return this.y;
+      }
+
+   }
+
+
+{
+   int a;
+   a.getY();
+}

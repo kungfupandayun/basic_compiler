@@ -1,0 +1,12 @@
+/* Description:
+    teste la regle (3.7) de la vérification contextuelles
+    Déclaration de champ avec initialisation incompatibles
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  A a = new Object(); // Object n'est pas un sous type de A
+
+}

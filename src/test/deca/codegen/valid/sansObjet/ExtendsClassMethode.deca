@@ -1,0 +1,19 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+
+class Point2D {
+	void m() { }
+	void p() { }
+}
+
+class Point3D extends Point2D {
+	void p() { }
+	void q() { }
+}
+

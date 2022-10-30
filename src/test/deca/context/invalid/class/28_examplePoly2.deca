@@ -1,0 +1,21 @@
+/* Description:
+    test invalide en utilisant field protegé
+    (example sur le poly)
+
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+class A {
+
+  protected int x;
+
+}
+
+class B extends A {
+    int getX(A a) {
+    return a.x; // Erreur contextuelle : le type de ’a’ (A) n’est pas
+      // un sous-type de B.
+}
+}

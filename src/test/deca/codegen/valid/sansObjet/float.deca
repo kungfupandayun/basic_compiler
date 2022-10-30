@@ -1,0 +1,17 @@
+/* Description:
+    Tester un trés grand calcul
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+{
+	float y = 1;
+	if(0<y){
+		print("ok");
+	} else {
+    print("erreur");
+  }
+}

@@ -1,0 +1,16 @@
+// Description:
+//    Déclaration d'une fonction int mais avec return float
+//
+// Resultats:
+//    cannot cast float to int
+
+
+class A {
+	int a() {
+		return float;
+	}
+}
+
+{
+}
+

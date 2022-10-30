@@ -1,0 +1,25 @@
+/* Description:
+    Utilisation d'un méthode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	   1.21
+     5
+     2
+     3
+*/
+
+{
+	int x = 1;
+	int y = 2;
+	int z;
+	float a = 1.21;
+	printx(a);
+	z = x + y;
+	x = z + y;
+	println(x);
+	println(y);
+	println(z);
+
+}

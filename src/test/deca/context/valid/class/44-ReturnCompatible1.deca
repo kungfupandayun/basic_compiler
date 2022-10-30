@@ -1,0 +1,19 @@
+/* Description:
+    teste la regle (3.24) (3.28) de la vérification contextuelles
+    Return compatible d'une méthode
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  Object methode(){
+    B b = new B();
+    return b; // b est un sous type de Object
+  }
+}
+class B {
+
+}

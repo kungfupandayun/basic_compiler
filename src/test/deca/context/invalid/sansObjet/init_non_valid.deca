@@ -1,0 +1,20 @@
+/*
+	Test => 	Type ListDeclVar ;	
+			ListDeclVar=> DeclVar, ... , DeclVar;
+			DeclVar=> IDENT=NoInitialisation / IDENT=Initialisation 
+
+
+	Résultat=>	syntaxe valid, context non-> valid	
+			ident a , e , h ,k => null
+			valeurs initialisé avec des vals non correspondent aux types
+
+	Date=>	17/1/2020
+*/
+
+{
+	int 	a, b="abcd" , c=b;
+	float 	e, f=true , g=f;
+	string 	h, i=23  ,j=i;
+	boolean	k, l=5.23 , m=l;
+
+}

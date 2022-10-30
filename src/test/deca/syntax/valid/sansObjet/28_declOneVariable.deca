@@ -1,0 +1,17 @@
+/* Description:
+    Decl_var sans initialisation
+
+
+
+ Historique:
+    cree le 13/01/2020
+*/
+
+{
+        int x;
+        float y;
+        string s;
+        boolean b;
+        void z;
+
+}

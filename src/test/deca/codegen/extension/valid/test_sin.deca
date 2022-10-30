@@ -1,0 +1,62 @@
+/* Test sinus dans quatre quadrant 
+    + 4 quadrants val négatives
+    + 2 valeurs plus grandes que pi
+
+ */
+
+
+
+ #include "Math.decah"
+
+ {  
+     Math m=new Math();
+     float a,b,c,d,e,f,g,h,i,j,k,l;
+
+     a= m.sin(60);
+     println("val Q1 30500 =>",a);
+     println("sa val réelle=>","0.257080551");
+
+     b= m.sin(2.223);
+     println("val Q2 2.223 =>",b);
+     println("sa val réelle=>","0.794748233");
+
+     c= m.sin(3.898);
+     println("val Q3 3.898 =>",c);
+     println("sa val réelle=>","-0.68631292");
+
+     d= m.sin(4.98);
+     println("val Q3 4.98 =>",d);
+     println("sa val réelle=>","-0.964405361");
+
+     e= m.sin(-4.98);
+     println("val Q4 -4.98 =>",e);
+     println("sa val réelle=>","0.964405361");
+
+     f= m.sin(-3.898);
+     println("val Q3 -3.898 =>",f);
+     println("sa val réelle=>","0.68631292");
+
+     g= m.sin(-2.223);
+     println("val Q2 -2.223 =>",g);
+     println("sa val réelle=>","-0.794748233");
+
+     h= m.sin(-0.26);
+     println("val Q1 -0.26 =>",h);
+     println("sa val réelle=>","-0.257080551");
+
+     i= m.sin(22.32);
+     println("val 22.32 =>",i);
+     println("sa val réelle=>","-0.322956214");
+
+     j= m.sin(-1210.26);
+     println("val Q1 -1210.26 =>",j);
+     println("sa val réelle=>","0.679314687");
+
+     k= m.sin(0);
+     println("val sin 0 =>",k);
+     println("sa val réelle=>","0");
+
+     l= m.sin(1.5707963);
+     println("val sin pi/2 =>",l);
+     println("sa val réelle=>","1");
+ }

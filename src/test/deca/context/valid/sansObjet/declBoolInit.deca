@@ -1,0 +1,13 @@
+// Description:
+//   Déclaration d'un float avec son Initialisation
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      boolean c = false;
+      boolean t = true;
+}

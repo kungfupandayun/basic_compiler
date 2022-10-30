@@ -1,0 +1,18 @@
+/*
+	Description: instance of sans declaration de l'objet
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+{
+	
+
+	 if(instanceof type)
+	{
+	}
+
+}

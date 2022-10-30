@@ -1,0 +1,30 @@
+/* Description:
+    Tester un ifthenelse double
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+    ok
+
+*/
+
+{
+	float x;
+	x = 1;
+	if(x>=0 && x<=5){
+		println("ok");
+	} else {
+    if(x>5){
+			print("erreur");
+		}else{
+			print("erreur");}
+		x = 1;
+	}
+	x = 0;
+	if(x == 0){
+		println("ok");
+	} else {
+    println("erreur");
+  }
+}

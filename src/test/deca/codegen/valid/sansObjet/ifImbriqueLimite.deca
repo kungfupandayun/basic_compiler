@@ -1,0 +1,22 @@
+/* Description:
+     tester un if the else avec limitation de nombre de registre
+      r = 4
+    Historique:
+      cree le 08/01/2020
+*/
+
+{
+    int a = 0;
+    if (a == 0)
+    {
+      println("ok");
+      if (a == 0)
+      {
+        if (a == 0){
+          println("ok");
+
+                  }
+        println("ok");
+      }
+    }
+}

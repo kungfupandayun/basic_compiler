@@ -1,0 +1,20 @@
+/* Description:
+    teste la regle (3.24) (3.28)  de la vérification contextuelles
+    Le type de retour de la méthode est incompatible
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  int methode(int d, float e){
+    C c = new C();
+    return c;
+  }
+
+}
+class C {
+
+}

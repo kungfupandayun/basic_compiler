@@ -1,0 +1,13 @@
+/* Description:
+    tests de programme lexi correct, syntax incorrect
+
+ Resultats:
+    ligne 13: Erreur,print sans termine
+
+ Historique:
+    cree le 10/01/2020
+*/
+{
+println(1234567890);
+print(2
+}

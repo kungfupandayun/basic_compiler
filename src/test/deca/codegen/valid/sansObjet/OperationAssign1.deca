@@ -1,0 +1,22 @@
+/* Description:
+    Tester une operation d'assignement
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+
+
+
+{
+  int x = 0;
+  int a = 1;
+  x = (a = 2);
+  if (x == 2){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+}

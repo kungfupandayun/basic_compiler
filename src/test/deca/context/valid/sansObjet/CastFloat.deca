@@ -1,0 +1,6 @@
+{
+float i = 2;
+//int f = (int) (i) + 2;
+//f = f + (float)(i);
+print((int)(i));
+}

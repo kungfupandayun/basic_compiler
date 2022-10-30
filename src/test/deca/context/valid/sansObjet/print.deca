@@ -1,0 +1,29 @@
+/* Description:
+    Programme minimaliste utilisant print
+	context et syntax valide
+
+ Resultats:
+    Hello
+
+ Historique:
+    cree le 01/01/2020
+*/
+
+{
+
+	//FLOATHEX
+  	printlnx(0x9.Ap9f);
+	printx(0x9.Ap9f);
+
+  	//FLOATDEC
+  	print(3.3e-6f);
+  	println(2323.656);
+	
+	//PRINT LIST EXP
+	println(1234567890,22,1+2);
+
+	//Print string
+	print("hahahaha");
+	println("hahahaha/nhahahaha");
+
+}

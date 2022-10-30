@@ -1,0 +1,11 @@
+/*Description:
+   Test du programme sur utilisation de
+      if then else
+
+   Historique:
+      cree le 13/01/2020
+*/
+
+{
+      if (x) {} else {}
+}

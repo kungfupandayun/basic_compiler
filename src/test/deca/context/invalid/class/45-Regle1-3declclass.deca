@@ -1,0 +1,13 @@
+/* Description:
+     teste la régle (1.3) type n'est pas compatible avec une classe
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+  class A {
+
+  }
+  Classe B { // erreur a ce niveau "Classe" n'est pas une classe
+
+  }

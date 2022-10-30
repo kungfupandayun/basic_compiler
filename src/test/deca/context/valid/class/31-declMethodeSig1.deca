@@ -1,0 +1,22 @@
+/* Description:
+    teste la regle (2.7) en cas de redéclaration de méthode valid (la même signature et le même type de retour)
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  void doNothing(){}
+
+}
+
+class B extends A {
+  void doNothing(){}
+}
+
+class C extends A{
+  void doNothing(){}
+}
+class D extends B{
+  void doNothing(){}
+}

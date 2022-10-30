@@ -1,0 +1,13 @@
+// Description:
+//    Programme utilisant un cast
+//
+// Resultats:
+//    Hello
+//
+// Historique:
+//    cree le 01/01/2020
+
+{
+    int y;
+    y = (int) (5);
+  }

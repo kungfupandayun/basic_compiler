@@ -1,0 +1,11 @@
+/* Description:
+     tester class qui possede de field initialisé
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+   int x=4;
+
+   }

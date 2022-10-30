@@ -1,0 +1,9 @@
+/*
+  Objectif de test: tester l'affichage des entiers.
+*/
+
+{
+  println(1234567890);
+  print(22);
+  print(1+2);
+}

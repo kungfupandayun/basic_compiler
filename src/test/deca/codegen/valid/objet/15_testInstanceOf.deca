@@ -1,0 +1,30 @@
+/* Description:
+    test instanceOf
+
+    Historique:
+      cree le 23/01/2020
+*/
+class A {
+  int x =1;
+}
+
+class B extends A {
+
+  int y = 2;
+}
+
+class C extends A {
+
+  int y = 3;
+}
+
+// Main Program
+{
+  B b = new B();
+  C c = new C();
+  if ((c instanceof A)&&(b instanceof A)) {
+    println("instanceof réussit!");
+  }
+
+
+}

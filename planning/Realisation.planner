@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<project name="Projet GL" company="" manager="" phase="" project-start="20200106T000000Z" mrproject-version="2" calendar="2">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="test">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="0" sun="0"/>
+      <overridden-day-types/>
+      <days>
+        <day date="20200106" type="day-type" id="0"/>
+      </days>
+    </calendar>
+    <calendar id="2" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20200118" type="day-type" id="0"/>
+        <day date="20200106" type="day-type" id="0"/>
+        <day date="20200126" type="day-type" id="0"/>
+        <day date="20200105" type="day-type" id="0"/>
+        <day date="20200125" type="day-type" id="0"/>
+        <day date="20200104" type="day-type" id="0"/>
+        <day date="20200112" type="day-type" id="0"/>
+        <day date="20200111" type="day-type" id="0"/>
+        <day date="20200119" type="day-type" id="0"/>
+      </days>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Compr&#xE9;hension du sujet" note="" work="172800" start="20200106T000000Z" end="20200111T170000Z" work-start="20200106T080000Z" percent-complete="100" priority="1" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20200105T000000Z"/>
+    </task>
+    <task id="2" name="Analyse " note="" work="201600" start="20200106T000000Z" end="20200108T170000Z" work-start="20200106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <task id="3" name="Analyse Lexiacal" note="" work="57600" start="20200106T000000Z" end="20200107T170000Z" work-start="20200106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="4" name="Analyse Syntaxique" note="" work="57600" start="20200107T000000Z" end="20200107T142000Z" work-start="20200107T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200107T000000Z"/>
+      </task>
+      <task id="5" name="Jeux de test" note="" work="86400" start="20200106T000000Z" end="20200108T170000Z" work-start="20200106T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="6" name="Impl&#xE9;menter Hello World" note="" work="547200" start="20200108T000000Z" end="20200113T170000Z" work-start="20200108T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+      <task id="7" name="&#xC9;tape B" note="" work="316800" start="20200108T000000Z" end="20200112T170000Z" work-start="20200108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="8" name="Compl&#xE9;ter la classe EnvironmentExp" note="" work="86400" start="20200108T000000Z" end="20200110T170000Z" work-start="20200108T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200108T000000Z"/>
+        </task>
+        <task id="9" name="Classe de test de la classe EnvironmentExp" note="" work="57600" start="20200109T000000Z" end="20200110T170000Z" work-start="20200109T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200109T000000Z"/>
+        </task>
+        <task id="10" name="Implantation des trois parcours de l&#x2019;arbre" note="" work="115200" start="20200109T000000Z" end="20200112T170000Z" work-start="20200109T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200109T000000Z"/>
+        </task>
+        <task id="11" name="Jeux de tests &#xE9;tapeB" note="" work="57600" start="20200111T000000Z" end="20200112T170000Z" work-start="20200111T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200111T000000Z"/>
+        </task>
+      </task>
+      <task id="12" name="&#xC9;tape C" note="" work="230400" start="20200109T000000Z" end="20200113T170000Z" work-start="20200109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Impl&#xE9;mentation des parcours de l&#x2019;arbre abstrait" note="" work="86400" start="20200109T000000Z" end="20200111T170000Z" work-start="20200109T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200109T000000Z"/>
+        </task>
+        <task id="14" name="Completer les fichiers sources et tests Java" note="" work="115200" start="20200110T000000Z" end="20200113T170000Z" work-start="20200110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200110T000000Z"/>
+        </task>
+        <task id="15" name="Jeux de tests" note="" work="28800" start="20200113T000000Z" end="20200113T170000Z" work-start="20200113T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200113T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="16" name="Rendu Intermedia" note="" work="0" start="20200120T000000Z" end="20200120T000000Z" work-start="20200120T080000Z" percent-complete="100" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20200120T000000Z"/>
+    </task>
+    <task id="17" name="Impl&#xE9;menter language sans objet" note="" work="806400" start="20200110T000000Z" end="20200119T170000Z" work-start="20200110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+      <task id="18" name="&#xC9;tapeB" note="" work="460800" start="20200110T000000Z" end="20200116T170000Z" work-start="20200110T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="19" name="Construction de l'environnement" note="" work="86400" start="20200110T000000Z" end="20200112T170000Z" work-start="20200110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200110T000000Z"/>
+        </task>
+        <task id="20" name="V&#xE9;rification des expressions" note="naima, jiayun, an" work="144000" start="20200110T000000Z" end="20200114T170000Z" work-start="20200110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200110T000000Z"/>
+        </task>
+        <task id="21" name="V&#xE9;rification des instructions" note="" work="144000" start="20200110T000000Z" end="20200114T170000Z" work-start="20200110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200110T000000Z"/>
+        </task>
+        <task id="22" name="D&#xE9;compilation" note="An, Jiayun" work="28800" start="20200115T000000Z" end="20200115T170000Z" work-start="20200115T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200115T000000Z"/>
+        </task>
+        <task id="23" name="Test" note="an, jiayun" work="57600" start="20200115T000000Z" end="20200116T170000Z" work-start="20200115T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200115T000000Z"/>
+        </task>
+      </task>
+      <task id="24" name="&#xC9;tapeC" note="" work="345600" start="20200114T000000Z" end="20200119T170000Z" work-start="20200114T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="25" name="Gestion des code pour declarer les variables" note="" work="115200" start="20200114T000000Z" end="20200117T170000Z" work-start="20200114T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200114T000000Z"/>
+        </task>
+        <task id="26" name="Gestion des code pour g&#xE9;rer les instructions" note="" work="86400" start="20200115T000000Z" end="20200117T170000Z" work-start="20200115T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200115T000000Z"/>
+        </task>
+        <task id="27" name="Test C" note="" work="144000" start="20200115T000000Z" end="20200119T170000Z" work-start="20200115T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200115T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="28" name="Langage essentiel et complet" note="" work="748800" start="20200117T000000Z" end="20200127T170000Z" work-start="20200117T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="27" type="FS"/>
+      </predecessors>
+      <task id="29" name="Analyse Syntaxe" note="" work="28800" start="20200120T000000Z" end="20200120T170000Z" work-start="20200120T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200120T000000Z"/>
+      </task>
+      <task id="30" name="&#xC9;tape B" note="" work="201600" start="20200117T000000Z" end="20200123T170000Z" work-start="20200117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="31" name="PASSE 1" note="An" work="28800" start="20200117T000000Z" end="20200117T170000Z" work-start="20200117T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200117T000000Z"/>
+        </task>
+        <task id="32" name="Passe 2" note="" work="57600" start="20200120T000000Z" end="20200121T170000Z" work-start="20200120T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200120T000000Z"/>
+        </task>
+        <task id="33" name="Passe 3" note="" work="57600" start="20200120T000000Z" end="20200121T170000Z" work-start="20200120T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200120T000000Z"/>
+        </task>
+        <task id="34" name="Test" note="" work="57600" start="20200122T000000Z" end="20200123T170000Z" work-start="20200122T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200122T000000Z"/>
+        </task>
+      </task>
+      <task id="35" name="&#xC9;tape C" note="" work="518400" start="20200120T000000Z" end="20200127T170000Z" work-start="20200120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="36" name="Creer le table de m&#xE9;thode" note="" work="28800" start="20200120T000000Z" end="20200120T170000Z" work-start="20200120T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200120T000000Z"/>
+        </task>
+        <task id="37" name="Init les class/methode/field" note="" work="57600" start="20200120T000000Z" end="20200121T170000Z" work-start="20200120T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200120T000000Z"/>
+        </task>
+        <task id="38" name="Gestion de instrcution de method" note="" work="115200" start="20200121T000000Z" end="20200124T170000Z" work-start="20200121T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200121T000000Z"/>
+        </task>
+        <task id="39" name="Gestion de expression de field" note="" work="144000" start="20200122T000000Z" end="20200126T170000Z" work-start="20200122T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200122T000000Z"/>
+        </task>
+        <task id="40" name="Gestion de instanceof et cast" note="" work="57600" start="20200125T000000Z" end="20200126T170000Z" work-start="20200125T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200125T000000Z"/>
+        </task>
+        <task id="41" name="Test" note="" work="115200" start="20200124T000000Z" end="20200127T170000Z" work-start="20200124T080000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200124T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="42" name="Extension" note="" work="403200" start="20200115T000000Z" end="20200125T170000Z" work-start="20200115T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+      <task id="43" name="Documentation" note="" work="144000" start="20200115T000000Z" end="20200119T170000Z" work-start="20200115T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200115T000000Z"/>
+      </task>
+      <task id="44" name="Implementation des algorithmes enj ava " note="" work="28800" start="20200122T000000Z" end="20200122T170000Z" work-start="20200122T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200122T000000Z"/>
+      </task>
+      <task id="45" name="Impementation des algorithmes deca" note="" work="144000" start="20200120T000000Z" end="20200124T170000Z" work-start="20200120T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200120T000000Z"/>
+      </task>
+      <task id="46" name="Test" note="" work="86400" start="20200123T000000Z" end="20200125T170000Z" work-start="20200123T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200123T000000Z"/>
+      </task>
+    </task>
+    <task id="47" name="Rendu final" note="" work="0" start="20200127T000000Z" end="20200127T000000Z" work-start="20200127T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20200127T000000Z"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Naima Amalou" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="Yidi Zhu" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="An Xian" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="Jiayun PO" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="5" name="Zaineb Tiour" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="30" resource-id="1" units="100"/>
+    <allocation task-id="18" resource-id="1" units="100"/>
+    <allocation task-id="7" resource-id="1" units="100"/>
+    <allocation task-id="4" resource-id="1" units="100"/>
+    <allocation task-id="3" resource-id="1" units="100"/>
+    <allocation task-id="35" resource-id="2" units="100"/>
+    <allocation task-id="24" resource-id="2" units="100"/>
+    <allocation task-id="12" resource-id="2" units="100"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="30" resource-id="3" units="100"/>
+    <allocation task-id="18" resource-id="3" units="100"/>
+    <allocation task-id="7" resource-id="3" units="100"/>
+    <allocation task-id="29" resource-id="4" units="100"/>
+    <allocation task-id="18" resource-id="4" units="100"/>
+    <allocation task-id="42" resource-id="4" units="100"/>
+    <allocation task-id="4" resource-id="4" units="100"/>
+    <allocation task-id="35" resource-id="5" units="100"/>
+    <allocation task-id="24" resource-id="5" units="100"/>
+    <allocation task-id="12" resource-id="5" units="100"/>
+  </allocations>
+</project>

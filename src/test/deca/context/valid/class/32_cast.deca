@@ -1,0 +1,20 @@
+/* Description:
+     tester cast
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+class A {
+
+}
+class B extends A {
+
+}
+
+
+{
+    A a = new A();
+    B b ;
+    b = (B)(a);
+}

@@ -1,0 +1,21 @@
+/* Description:
+     Déclarer une liste de classe ave des extends
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+   class A {
+   }
+   class B extends A {
+
+   }
+   class C extends B {
+
+   } class  D extends C {
+
+   } class E extends B {
+   
+   }

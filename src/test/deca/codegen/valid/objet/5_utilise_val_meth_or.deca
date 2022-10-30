@@ -1,0 +1,23 @@
+/*
+	Utilisation des variables déclaré avec OR
+*/
+
+class A{
+
+	void hello(boolean a,boolean b){
+		
+		boolean c=false;
+		boolean d=false;
+		if(c||d)
+		{println("erreur");}
+		else{print("ok");}
+		
+		
+	}
+}
+
+{
+A a=new A();
+a.hello(true,true);
+
+}

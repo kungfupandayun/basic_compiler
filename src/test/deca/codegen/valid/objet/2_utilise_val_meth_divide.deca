@@ -1,0 +1,25 @@
+/*
+	Utilisation des variables déclaré avec divide
+*/
+
+class A{
+
+	void hello(float a,float b){
+		
+		float c=100.2;
+		float d=20.0;
+		float e=c/d;
+		println("e=>",e);
+		println("c=>",c);
+		println("d=>",d);
+		e=1;
+		println(e);
+		
+	}
+}
+
+{
+A a=new A();
+a.hello(2.0,3.0);
+
+}

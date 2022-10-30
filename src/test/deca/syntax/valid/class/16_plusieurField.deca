@@ -1,0 +1,12 @@
+/* Description:
+     tester class avec une liste de field
+     (correct syntaxiquement)
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class  A {
+
+     int x, y;
+   }

@@ -1,0 +1,216 @@
+// Grenoble INP - Ensimag projet GL -*- mode: java -*-
+// Library for class Math of Deca, coded in Deca
+
+class Math 
+{
+ 
+  //variable globale 
+  float half_pi=1.57079632679;
+  float signx=1;
+  float signy=1;
+
+  float _findMod(float a, float b) 
+  { 
+    float mod=a;
+    // Finding mod by repeated subtraction 
+    while (mod >= b) 
+    {  mod = mod - b;  }    
+    return mod; 
+  } 
+ 
+
+  float _Q1(float teta)
+  { 
+    signx=1;
+    signy=1;
+    // //Rendre le signy à negative si teta<0
+    if(teta<0){
+     	signy=-1;
+    	teta=-teta;
+    }
+    //si teta>360
+    if(teta>=(4*half_pi)) {
+      teta=this._findMod(teta,4*half_pi);
+    }
+    //si teta dans 4eme quadrant
+    if((teta>=(3*half_pi/2)) && (teta<(4*half_pi))) {
+    	signy=signy*-1;
+    	teta=(4*half_pi)-teta;
+    }
+    //si teta dans 3eme quadrant
+    if((teta>=(2*half_pi)) && (teta<(3*half_pi/2))) {
+    	signy=signy*-1;
+    	signx=-1;
+    	teta=teta-(2*half_pi);
+    }
+    //si teta dans 2eme quadrant
+     if((teta >= half_pi) && (teta<(2*half_pi))){
+    	signx=-1;
+    	teta=(2*half_pi)-teta;
+    }
+
+    return teta;
+
+  }
+
+
+
+  //la fonction puissance de rad divise par le factioriel de l'indice
+  float _power_fact(float rad, int indice)
+  {  
+    float val=1;
+    int j=1;
+    float factorial=1;
+    while(j<=indice)
+    {
+      val=val*rad;
+      factorial=factorial*j;
+      j=j+1;     
+    }
+    return (val/factorial);
+  }
+
+  //methode asm pour faire sum=sum+a*v
+  float _fam(float a,float b ,float c) 
+  asm(
+	 "LOAD -3(LB), R1 
+	  LOAD -4(LB), R3 
+	  FMA -5(LB), R3
+	  LOAD R3,R0
+    BRA fin.code.Math._fam"
+    );
+
+
+  //methode de sinus, prend une valeur en radian
+  float sin(float degre) 
+  {
+    int i=0;
+    float sign=1;
+    float resultsin=0;
+    degre=this._Q1(degre);
+   
+    while(i<15){
+      if(i%2==1){sign=-1;} 
+      else {sign=1;}
+      resultsin=this._fam(resultsin,sign,this._power_fact(degre,(2*i+1))); 
+      i=i+1;
+    }
+    return signy*resultsin;
+  }
+ 
+  
+  //methode de cosinus, prendre une valeur en radian
+  float cos(float degre) 
+  {
+    int i=0;
+    float sign=1;
+    float resultcos=0;
+    degre=this._Q1(degre);
+    while(i<15){
+      if(i%2==1){sign=-1;} 
+      else {sign=1;}
+      resultcos=this._fam(resultcos,sign,this._power_fact(degre,(2*i))); 
+      i=i+1;
+    }
+    return signx*resultcos;
+  }
+
+   
+  
+
+  //merthode arc sin ,donne une sortie entre [-1 et 1]
+  float asin(float v_cherche) 
+  {
+     float signteta=1;
+     float valeur=0;
+     float rad=0;
+
+    if(v_cherche<0) {
+      signteta=-1;
+      v_cherche=-v_cherche;
+    }
+    
+    if(v_cherche==1){
+      return half_pi*signteta;
+
+    }
+
+    if(v_cherche<1)
+    {     
+      //Parcourir tous les degres possible
+      while(!(valeur>=(v_cherche-0.0002)))
+    	{
+        valeur= this.sin(rad);
+        rad=rad+0.0001;
+      }   
+    }else 
+    {
+    print("Math ERROR==> ");
+    } 
+    return rad*signteta; 
+  }
+
+
+
+
+  //methode arc tangent, si entree depasse 1000, sort pi/2 directe
+  float atan(float v_cherche) 
+  {
+    float signteta=1;
+    float valeur1=0;
+    float valeur2=0;
+    float degree=0;
+    
+      if(v_cherche<=0) {
+        signteta=-1;
+        v_cherche=-v_cherche;
+      }
+
+      if(v_cherche>1000){
+        return half_pi*signteta;
+      }
+      else{
+        //Parcourir tous les degres possible
+        while(!(valeur1>=(v_cherche-0.0025)))
+        {
+        valeur1= this.sin(degree);
+        valeur2=this.cos(degree);
+        valeur1=valeur1/valeur2;
+        degree=degree+0.001;
+        }    
+        return degree*signteta;
+      }
+  }
+
+  //methode ulp rends le plus petit pas avec la valeur prochaine
+  float ulp(float valeur) 
+  {
+    float min=0x1.0p-144;
+    float result=2;
+    int i=0;
+
+    if(valeur==0){
+      return min;
+    }
+
+    while(valeur!=valeur+1)
+    {
+      valeur=valeur*2;
+      i=i+1;
+    }
+
+    while(i>0)
+    {
+    result=result/2;
+    i=i-1;
+    }
+
+    return result; 
+  }
+
+
+   
+}
+
+
+// End of Deca Math library

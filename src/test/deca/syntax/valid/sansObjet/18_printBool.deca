@@ -1,0 +1,13 @@
+/* Description:
+    Print bool, syntax correct
+
+    Historique:
+      cree le 10/01/2020
+*/
+
+{
+  println(true);
+  println(false);
+  print(false);
+  print(true);
+}

@@ -1,0 +1,22 @@
+/* Description:
+    Exemple de calcul arithmétique avec les variables
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+*/
+
+
+
+{
+  int x = 1;
+  int y = 2;
+  int z;
+  z = 2*x - 3*y;
+  if (z == -4){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+}

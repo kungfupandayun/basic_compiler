@@ -1,0 +1,18 @@
+/* Description:
+     tester class qui possede de method sans Param
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+
+    int x;
+
+
+   }
+   class B extends A {
+
+    int x;
+    
+   }

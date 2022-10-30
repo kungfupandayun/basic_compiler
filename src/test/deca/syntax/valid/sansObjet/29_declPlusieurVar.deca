@@ -1,0 +1,11 @@
+/* Description:
+    Declaration de plusieurs variables en meme temps
+
+ Historique:
+    cree le 13/01/2020
+*/
+
+{
+        int x,y,z = 7;
+
+}

@@ -1,0 +1,24 @@
+/* Description:
+     teste la régle (2.6) Déclaration d'une méthode qui existe déja dans la class supérieur,
+     mais qui n'a pas la meme signature (type de parametre different)
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+
+class A {
+  void methode(int a, int b, float c, C d, D d){} // methode declarer pour la premire fois ici
+  }
+
+
+class B extends A{
+  void methode(int d, int c, int h, C a, C z){} // erreur au niveau de dernier param C n'est pas un sous type de D
+}
+
+class C {
+
+}
+class D extends C {
+
+}

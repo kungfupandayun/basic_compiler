@@ -1,0 +1,13 @@
+/* Description:
+    Test du programme sur utilisation de
+      decl_var-->asign_expr-->Ident = Literal ( String)
+
+
+
+     Historique:
+        cree le 13/01/2020
+*/
+
+{
+        int y = z = "Naima";
+}

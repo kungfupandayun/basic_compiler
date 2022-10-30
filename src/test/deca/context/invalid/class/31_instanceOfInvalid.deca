@@ -1,0 +1,27 @@
+/* Description:
+     tester instanceof
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+class A {
+
+}
+class B extends A {
+
+}
+
+class C extends B {
+
+}
+
+{
+    A a = new A();
+    B b = new B();
+    int x;
+    if (x instanceof B) {
+      b = (B)(a);
+      println("ok");
+    }
+}

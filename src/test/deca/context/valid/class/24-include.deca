@@ -1,0 +1,18 @@
+/*
+  Description:
+    tester l'inclusion de la classe math
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+#include "Math.decah"
+
+{
+	Math m = new Math();
+  float x=m._asin(-23.0);
+	println("asin(0) =",x );
+  println("asin est forcement entre -1 et 1");
+}

@@ -1,0 +1,156 @@
+class Math {
+
+	float fam(float a,float b ,float c) asm(
+					     "LOAD -3(LB), R1 
+				       LOAD -4(LB), R3 
+					     FMA -5(LB), R3
+				       LOAD R3,R0
+               BRA fin.code.Math.fam");
+
+
+
+
+	
+
+}
+
+{
+
+		//le teta à tester [en dégré]
+		int teta=43;  //5 gb
+
+		float K=0.60725293510314; //6gb
+		float half_pi=1.57079632679;  //7gb
+		float x=K;  //8gb
+		float y=0;	//9gb
+		float z=0;	//10gb
+		float v=1.0;	//11gb
+		int i=0;		//12gb
+		float tmp_teta=0;	//13gb
+		float tx,ty,tz;	
+
+		int signx=1;	//17gb
+		int signy=1;	//18gb
+		Math meth=new Math();
+	
+ 		
+			z=43;
+			println(teta);
+			//Rendre le signy à négative si teta<0
+			if(teta<0){
+			 	signy=-1;
+				teta=-teta;
+			}
+
+			//si teta>360
+			if(teta>=360) {
+				teta=teta%(360);
+
+			}
+
+			//si teta dans 4eme quadrant
+			if((teta>=270) && (teta<360)) {
+				signy=-1*signy;
+				teta=360-teta;
+			}
+
+
+			//si teta dans 3eme quadrant
+			if((teta>=180) && (teta<270)) {
+				signy=signy*-1;
+				signx=-1;
+				teta=teta-180;
+
+			}
+
+			//si teta dans 2eme quadrant
+			if((teta>=90) && (teta<180)){
+				signx=-1;
+				teta=180-teta;
+			}
+	
+			z=(teta*half_pi)/90;
+
+
+		
+		while(i<=31)
+		{
+			//ca marche que avec 11 itérations
+
+
+			if(i==0){tmp_teta=0.78539816339745;}
+			if(i==1){tmp_teta=0.46364760900081;}
+			if(i==2){tmp_teta=0.24497866312686;}
+			if(i==3){tmp_teta=0.12435499454676;}
+			if(i==4){tmp_teta=0.06241880999596;}
+			if(i==5){tmp_teta=0.03123983343027;}
+			if(i==6){tmp_teta=0.01562372862048;}
+			if(i==7){tmp_teta=0.00781234106010;}
+			if(i==8){tmp_teta=0.00390623013197;}
+			if(i==9){tmp_teta=0.00195312251648;}
+			if(i==10){tmp_teta=0.00097656218956;}
+			if(i==11){tmp_teta=0.00048828121119;}
+			if(i==12){tmp_teta=0.00024414062015;}
+			if(i==13){tmp_teta=0.00012207031189;}
+			if(i==14){tmp_teta=0.00006103515617;}
+			if(i==15){tmp_teta=0.00003051757812;}
+			if(i==16){tmp_teta=0.00001525878906;}
+			if(i==17){tmp_teta=0.00000762939453;}
+			if(i==18){tmp_teta=0.00000381469727;}
+			if(i==19){tmp_teta=0.00000190734863;}
+			if(i==20){tmp_teta=0.00000095367432;}
+			if(i==21){tmp_teta=0.00000095367432;}
+			if(i==22){tmp_teta=0.00000023841858;}
+			if(i==23){tmp_teta=0.00000011920929;}
+			if(i==24){tmp_teta=0.00000005960464;}
+			if(i==25){tmp_teta=0.00000002980232;}
+			if(i==26){tmp_teta=0.00000001490116;}
+			if(i==27){tmp_teta=0.00000000745058;}
+			if(i==28){tmp_teta=0.00000000372529;}
+			if(i==29){tmp_teta=0.00000000186265;}
+			if(i==30){tmp_teta=0.00000000093132;}
+			if(i==31){tmp_teta=0.00000000046566;}
+			if(z>=0)
+			{
+				ty=-y;  
+				//tx=x+ty*v; 
+				tx=meth.fam(x,ty,v);
+				//ty=y+x*v;
+				ty=meth.fam(y,x,v);
+				tz=z-tmp_teta;
+
+			}
+			else{
+				tx=-x;  
+				//ty=y-x*v;
+				ty=meth.fam(y,tx,v);
+				//tx=x+y*v;
+				tx=meth.fam(x,y,v);
+				tz=z+tmp_teta;
+			}
+			x=tx;
+			y=ty;
+			z=tz;
+			v=v*0.5;
+
+			i=i+1;
+
+		}	
+		
+			x=signx*x;
+			y=signy*y;
+			printlnx("cos=>",(x));
+			printlnx("sin=>",(y));
+			println("cos=>",(x));
+			println("sin=>",(y));
+
+
+
+			printlnx (0.92050485345244);
+			printlnx (0.731353701619171);
+
+			printlnx (0.453990499739547);
+
+
+
+}

@@ -1,0 +1,13 @@
+/* Description:
+     tester class qui possede de plusieur var
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+   int x;
+   float y = 3.0;
+   void z;
+
+   }

@@ -1,0 +1,87 @@
+; start main program
+	TSTO #8
+	BOV stack_overflow_error
+	ADDSP #13
+; La table des Méthode de Object
+; Main program
+; Variables declarations:
+; iniitialisation 
+	LOAD #1, R2
+	STORE R2, 1(GB)
+; iniitialisation 
+	LOAD #4, R2
+	STORE R2, 2(GB)
+; iniitialisation 
+	LOAD #0x1.0p1, R2
+	STORE R2, 3(GB)
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	STORE R2, 4(GB)
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	STORE R2, 5(GB)
+; Beginning of main instructions:
+	BRA E_cond.1
+E_debut.1:
+	LOAD 4(GB), R2
+	MUL 3(GB), R2
+	BOV arithmetic_overflow
+	STORE R2, 4(GB)
+	LOAD 5(GB), R2
+	LOAD 1(GB), R3
+	FLOAT R3, R3
+	MUL R3, R2
+	BOV arithmetic_overflow
+	STORE R2, 5(GB)
+	LOAD 1(GB), R2
+	ADD #1, R2
+	BOV arithmetic_overflow
+	STORE R2, 1(GB)
+	LOAD 1(GB), R1
+	WINT
+	WNL
+	LOAD 5(GB), R1
+	WFLOAT
+	WNL
+E_cond.1:
+	LOAD 1(GB), R2
+	CMP 2(GB), R2
+	SLE R2
+	CMP #1, R2
+	BEQ E_debut.1
+	WSTR "power val=> "
+	LOAD 4(GB), R1
+	WFLOAT
+	WNL
+	WSTR "factorial val=> "
+	LOAD 5(GB), R1
+	WFLOAT
+	WNL
+	HALT
+; end main program
+arithmetic_overflow:
+	WSTR "Arithmetic overflow"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Stack overflow"
+	WNL
+	ERROR
+heap_overflow:
+	WSTR "Heap overflow"
+	WNL
+	ERROR
+division_zero:
+	WSTR "Diviseur ne doit pas egal 0"
+	WNL
+	ERROR
+varaible_non_defini:
+	WSTR "Variable n'est pas défini"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencing null pointer"
+	WNL
+	ERROR

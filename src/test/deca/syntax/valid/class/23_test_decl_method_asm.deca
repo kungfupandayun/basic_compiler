@@ -1,0 +1,28 @@
+/*
+	Description: tests declarations declaration methodes dans une class 
+		     avec un asm
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+
+
+class b extends c{
+
+	
+	float hello() asm ( "powerpuff\"
+		\\girl returns
+		\\\\hello");
+	
+
+		
+	
+
+
+}
+
+
+

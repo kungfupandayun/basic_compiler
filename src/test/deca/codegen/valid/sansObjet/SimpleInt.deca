@@ -1,0 +1,19 @@
+/* Description:
+    Tester un petit program avec que declaration de int
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+{
+	int y = 1;
+	int x = y + 5;
+	y = x + 1;
+  if (y == 7){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+}

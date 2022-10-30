@@ -1,0 +1,28 @@
+/* Description:
+     Déclarer plusieur attribut avec des differentes visibilité
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+   class A {
+      // un attribut public
+      int nombre;
+
+      // plusieurs attribus public
+      int jour,mois,annee;
+
+      // un attribut proteger
+      protected int ab;
+
+      // plusieurs attribus protger
+      protected float a;
+      // declaration avec initialisation
+      int n = 66;
+      float b = 23, c = 9.3;
+      float d = 16;
+      protected int m = 88;
+      protected float e = 9.3;
+   }

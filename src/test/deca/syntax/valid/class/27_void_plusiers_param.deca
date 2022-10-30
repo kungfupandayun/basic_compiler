@@ -1,0 +1,16 @@
+/*
+	Description: test syntax d'une méthode void avec plusieurs parametre 
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+class A{
+void setX(int x, kaka m, kiko x){
+	this.x=x;
+	
+}
+}
+

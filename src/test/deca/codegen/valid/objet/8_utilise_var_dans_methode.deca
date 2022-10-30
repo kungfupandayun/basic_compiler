@@ -1,0 +1,25 @@
+/*
+	Utilisation des variables déclaré dans une méthode
+*/
+
+class A{
+
+	void hello(float a,float b){
+		
+		float c=23.2;
+		float d=32.0;
+		float e=c*d;
+		println("e=>",e);
+		println("c=>",c);
+		println("d=>",d);
+		e=1;
+		println(e);
+		
+	}
+}
+
+{
+A a=new A();
+a.hello(2.0,3.0);
+
+}

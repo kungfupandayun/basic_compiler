@@ -1,0 +1,9 @@
+// Description:
+//    tests de programme incorrect syntaxiquement (int trop long)mais correct lexicalment
+//
+// Historique:
+//    cree le 22/01/2020
+
+{
+int a = 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111;
+}

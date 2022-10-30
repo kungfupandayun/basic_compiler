@@ -1,0 +1,37 @@
+/* Description:
+     tester un if the else avec limitation de nombre de registre
+      r = 4
+    Historique:
+      cree le 08/01/2020
+*/
+
+{
+    int x = 0;
+    int y = 1;
+    int a = 0;
+    if (a == 0)
+    {
+      a = a +1;
+      if (a == 1)
+      {
+        a = a +1;
+      }
+    }
+    println(a);
+}
+
+
+/*
+a = a +1;
+if (a == 1)
+{
+  a = a +1;
+  if (a == 2)
+  {
+    a = a + 1;
+    if ( a == 3){
+      a = a +1;
+    }
+  }
+}
+*/

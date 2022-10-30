@@ -1,0 +1,31 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	ok
+
+*/
+
+class A {
+	int x;
+	int set(){
+		return 1;
+	} 
+}
+class B extends A {
+	int x = 10;
+	int setX(){
+		x = 5;
+		println(x);
+		return 1;
+	}
+	void display(){
+		println(x);
+	} 
+}
+{
+	(new B()).display();
+
+}

@@ -1,0 +1,11 @@
+/* Description:
+    tests de programme lexi correct, syntax incorrect (bloc non terminee)
+
+ Resultats:
+    ligne 12: Erreur, bloc non terminee
+
+ Historique:
+    cree le 10/01/2020
+*/
+{
+println(1234567890);

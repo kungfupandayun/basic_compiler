@@ -1,0 +1,23 @@
+/*
+	Description => (La déclaration de variable ne peut pas etre
+                  au milieu de la liste d'instruction)
+
+	Résultat=>       no viable alternative at input 'x'
+
+	Date=>	17/1/2020
+*/
+
+
+{
+	int z;
+	z=23;
+
+	xyz(23 > 32  || 12 < 32 && 12>32);
+	(23 > 32  || 12 < 32 && 12>32);
+
+  int x= 1+2-3*4/5;
+
+	readInt();
+	readFloat();
+
+}

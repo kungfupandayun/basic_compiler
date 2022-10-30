@@ -1,0 +1,112 @@
+{
+
+		// arcsin valeur à chercher   [ -1;1 ]
+		float v_cherche=0.55;
+
+		//0.6O725293510314
+		float K=0.60725293510314;
+		float half_pi=1.57079632679;
+		float x=K;
+		float y=0;
+		float z;
+
+		float v=1.0;
+
+		int i=0;
+		float j=0;
+
+		float valeur=0;
+
+		float tx,ty,tz;
+
+		float tmp_teta=0;
+
+		//TABLEAU ARCTAN(1/2^i)
+
+		float t0=  0.78539816339745 ;
+		float t1=  0.46364760900081 ;
+		float t2=  0.24497866312686 ;
+		float t3=  0.12435499454676 ;
+		float t4=  0.06241880999596 ;
+		float t5=  0.03123983343027 ;
+		float t6=  0.01562372862048 ;
+		float t7=  0.00781234106010 ;
+		float t8=  0.00390623013197 ;
+		float t9=  0.00195312251648 ;
+		float t10=  0.00097656218956 ;
+		float t11=  0.00048828121119 ;
+		float t12=  0.00024414062015 ;
+		float t13=  0.00012207031189 ;
+		float t14=  0.00006103515617 ;
+		float t15=  0.00003051757812 ;
+
+
+		int signteta=1;
+		//changer le signe de la valeur à positive
+		if(v_cherche<0) {
+			signteta=-1;
+			v_cherche=-v_cherche;
+		}
+
+
+
+
+	/*parcourir chaque dégré de 0 à 90
+	pour trouver ses valeurs correspondre
+	Si une valeur est tombée entre valeur attendu-0.0000001 et valeur attendur +0.00001
+	Sortir de la boucle
+	Retourne le dégré corréspondante* le sige de la valeur ori*/
+	while((!((valeur>=(v_cherche-0.01)) && (valeur<=(v_cherche+0.01))))&& (j<=90.0))
+	{
+		z=j*half_pi/90;
+		y=0;
+		x=K;
+		i=0;
+		v=1;
+		while(i<=8)
+		{
+			//Ca marche plus apres 8 ième itération
+			if(i==0){tmp_teta=t0;}
+			if(i==1){tmp_teta=t1;}
+			if(i==2){tmp_teta=t2;}
+			if(i==3){tmp_teta=t3;}
+			if(i==4){tmp_teta=t4;}
+			if(i==5){tmp_teta=t5;}
+			if(i==6){tmp_teta=t6;}
+			if(i==7){tmp_teta=t7;}
+			if(i==8){tmp_teta=t8;}
+
+			//println(tmp_teta);
+
+
+			if(z>=0)
+			{
+				tx=x-y*v;
+				ty=y+x*v;
+				tz=z-tmp_teta;
+
+			}
+			else{
+				tx=x+y*v;
+				ty=y-x*v;
+				tz=z+tmp_teta;
+
+			}
+			x=tx;
+			y=ty;
+			z=tz;
+			v=v*0.5;
+
+			i=i+1;
+		}
+		valeur=y;
+		j=j+0.01;
+
+	}
+	//println(j);
+	print("degre=>");
+	println(j*signteta);
+
+
+
+}

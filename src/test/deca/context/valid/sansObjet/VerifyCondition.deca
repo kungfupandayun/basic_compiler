@@ -1,0 +1,19 @@
+// Description:
+//   test de vérification d'une condition
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 14/01/2020
+
+{
+    int x = 6;
+    int y;
+    if(x==5)
+    {
+      y = 1;
+    } else {
+      y = 2;
+    }
+}

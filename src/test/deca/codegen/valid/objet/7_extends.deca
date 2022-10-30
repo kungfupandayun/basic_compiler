@@ -1,0 +1,15 @@
+/* Description:
+    Declaration de deux class
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int y;
+
+}
+
+class B extends A{
+
+}

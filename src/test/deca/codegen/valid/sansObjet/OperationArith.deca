@@ -1,0 +1,37 @@
+/* Description:
+    Tester tous les operation Arithmitique
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+    ok
+    ok
+
+*/
+
+
+
+{
+  int x = 72;
+  int z = 9;
+  int a,b,c,d;
+  a = 8;
+  b = 5;
+  c = 6;
+  if ((a+b) == 13){
+    println("ok");
+  }else {
+    println("erreur");
+  }
+  if ((x/z) == 8){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+  if (((b+c) - 2) == 9){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+}

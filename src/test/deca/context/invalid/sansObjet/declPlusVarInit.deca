@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste utilisant la déclaration de plusieurs variabless
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      int x,y = 4,3;
+}

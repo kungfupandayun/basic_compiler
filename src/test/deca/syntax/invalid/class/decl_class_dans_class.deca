@@ -1,0 +1,35 @@
+/*
+	Description: tests instance of dans main et methode
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+
+
+*/
+class a extends b {
+
+
+class A extends B{
+	print("hello");
+}
+
+class B{
+
+	int helo(){
+	if (this instance of z)
+	{
+		print (z);
+	}
+	}
+}
+
+
+{
+
+	if (b instance of z)
+	{
+		print (z);
+	}
+
+}

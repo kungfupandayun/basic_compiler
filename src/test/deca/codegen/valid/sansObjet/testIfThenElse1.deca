@@ -1,0 +1,14 @@
+{
+  int x = 0; // initialisation
+  int y = 1;
+  int a = 0;
+  //if (a == 0){
+    x = 1;
+    a = a +1;
+    println(x);
+    println(a);
+  //}
+  x = x + 1;
+  println(x);
+  println(a);
+}

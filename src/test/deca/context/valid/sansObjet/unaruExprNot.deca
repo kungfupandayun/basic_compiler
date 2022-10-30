@@ -1,0 +1,14 @@
+// Description:
+//   Test d'unary Expr
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      boolean y = true;
+      boolean x = ! y;
+
+}

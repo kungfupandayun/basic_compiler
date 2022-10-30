@@ -1,0 +1,67 @@
+{
+
+		//le teta à tester		
+		float teta=45;
+
+		//0.6O725293510314
+		float K=0.60725293510314;
+		float half_pi=1.57079632679;
+		float x=K;
+		float y=0;
+		float z=teta;
+		float v=1.0;
+		int n=32;
+		int i=0;
+		int j=1;
+		
+		float tx,ty,tz;
+			
+		
+		float constant_teta=45;
+		float tmp_teta=0;
+
+		//TABLEAU ARCTAN(1/2^i)
+		
+			
+		while(i<32)
+		{
+			j=1;
+			tmp_teta=constant_teta;
+			while(j<=i){
+				tmp_teta=tmp_teta/2;
+				j=j+1;
+			
+			}
+			
+
+			println(tmp_teta);
+			
+	
+			if(z>=0)
+			{
+				tx=x-y*v;
+				ty=y+x*v;
+				tz=z-tmp_teta;
+			
+			}
+			else{
+				tx=x+y*v;
+				ty=y-x*v;
+				tz=z+tmp_teta;
+				
+			}
+			x=tx;
+			y=ty;	
+			z=tz;
+			v=v*0.5;
+						
+			i=i+1;
+		}
+			
+			
+			println("cos=>",x);
+			println("sin=>",y);
+			
+		
+
+}

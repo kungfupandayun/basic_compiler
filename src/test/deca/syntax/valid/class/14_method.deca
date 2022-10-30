@@ -1,0 +1,14 @@
+/* Description:
+     tester class avec une list de variables
+     (correct syntaxiquement)
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class  A {
+
+     int printX (int x){
+      print("123");
+     }
+   }

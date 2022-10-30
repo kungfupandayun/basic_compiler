@@ -1,0 +1,16 @@
+/* Description:
+      teste la régle (2.6) Déclaration d'une méthode qui existe déja dans la class supérieur,
+      mais qui n'a pas le meme type de retour
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+
+class A {
+  A methode(float a, float b, Object a){} // methode declarer pour la premiere fois ici
+  }
+
+class B extends A{
+  void methode(float d, float e, B b){} // erreur au niveau de type de retour de la methode, null n'est pas  prédefinie
+}

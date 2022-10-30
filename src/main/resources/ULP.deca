@@ -1,0 +1,46 @@
+{
+
+//    //VALEUR A REDUIRE
+//     float val=5;
+
+//     int i=0;
+
+//    //AMENER LA VALEUR ENTRE (0 ET 1)
+//    float valpet= val/val;
+
+//     println(valpet);
+//     println(val);
+
+//        while(i<149)
+//     {
+//         valpet=valpet/2.0;
+//         i=i+1;
+//     }
+
+//     println(valpet);
+//     println(valpet+val);
+
+
+     int i=0;
+     float valeur=0.911111111111;
+     float ulp=2;
+     float valeur1=0.91111111111;
+
+     printlnx(valeur);
+
+      while(valeur!=valeur+1){
+        valeur=valeur*2;
+        i=i+1;
+      }
+
+      while(i>0)
+      {
+          ulp=ulp/2;
+          i=i-1;
+      }
+
+      println(ulp);
+      valeur1=valeur1+ulp;
+      printlnx(valeur1);
+    
+}

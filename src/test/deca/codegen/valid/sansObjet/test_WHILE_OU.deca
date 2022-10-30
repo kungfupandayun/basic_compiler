@@ -1,0 +1,41 @@
+/* Description:
+    Tester condition WHILE avec OU operation
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok1
+    ok2
+    ok3
+
+
+*/
+
+{	int x=5;
+	int y=12;
+	//cas false false
+	while(false || x!=5){
+		println("erreur1");
+	} 
+
+	
+	//cas false true
+	while(false || x==5){
+		println("ok1");
+		x=7;
+	} 
+	
+	//cas true false
+	while(x==7 || false){
+		println("ok2");
+		x=9;
+	} 
+	
+	//cas true true
+	while(x==9 || y==12){
+		println("ok3");
+		x=10;
+		y=120;	
+	}
+}
+

@@ -1,0 +1,25 @@
+/* Description:
+    Programme minimaliste utilisant print
+	syntax valid, context invalide
+
+ Resultats:
+    Hello
+
+ Historique:
+    cree le 01/01/2020
+*/
+
+{
+
+        print("Hello");
+	println(true);
+	println(false);
+	print(false);
+	print(true);
+	print(null);
+	println(null);
+	print();
+	println();
+
+
+}

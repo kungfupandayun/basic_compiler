@@ -1,0 +1,30 @@
+/* Description:
+    L'utilisation de return dans un if then else
+
+    Historique:
+      cree le 21/01/2020
+    Résultat attendu:
+
+*/
+
+class A {
+
+  boolean meth(int a){
+    if (a > 0){
+      return true;
+    } else{
+      return false;
+    }
+  }
+}
+
+
+{
+  A a = new A();
+  if (a.meth(2) && !a.meth(-2)){
+    println("ok");
+  }
+  else {
+    println("erreur");
+  }
+}

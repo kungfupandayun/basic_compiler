@@ -1,0 +1,24 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	2
+
+*/
+
+class Point2D {
+	int x; // Abscisse
+	int y; // Ordonnee
+	// Deplace ce point
+	// de a en diagonale.
+	void diag() asm(" LOAD #1, R2 ");
+}
+
+{
+	Point2D p1;
+	
+	p1 = new Point2D();
+	p1.diag();
+}

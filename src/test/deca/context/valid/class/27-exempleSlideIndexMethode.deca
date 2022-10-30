@@ -1,0 +1,20 @@
+/* Description:
+    un programme simple fournie dans les slides
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+class A {
+  int x;
+  void f() {}
+  int y;
+  void g() {}
+}
+class B extends A {
+  int z;
+  void f() {}
+  void h() {}
+  int x;
+}

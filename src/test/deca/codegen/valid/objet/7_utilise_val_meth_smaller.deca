@@ -1,0 +1,23 @@
+/*
+	Utilisation des variables déclaré avec <
+*/
+
+class A{
+
+	void hello(int a,int b){
+		
+		int c=10;
+		int d=23;
+		if(c<d)
+		{println("ok");}
+		else{print("erreur");}
+		
+		
+	}
+}
+
+{
+A a=new A();
+a.hello(2,1);
+
+}

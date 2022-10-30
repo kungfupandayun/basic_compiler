@@ -1,0 +1,15 @@
+// Description:
+//    Déclaration d'une fonction A mais avec return B avec A fille de B
+//
+
+
+class A {}
+
+class B extends A {
+	A a() {
+		return new B();
+	}
+}
+
+{
+}

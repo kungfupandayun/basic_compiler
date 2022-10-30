@@ -1,0 +1,22 @@
+/* Description:
+    Tester different un simple Modulu
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+
+
+
+{
+
+  if ((91 % 9 == 1) && (85 % 5 == 0)){
+    println("ok");
+  } else {
+    println("erreur");
+  }
+
+
+}

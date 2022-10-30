@@ -1,0 +1,10 @@
+/* Description:
+    Declaration d'un class avec field
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int x;
+}

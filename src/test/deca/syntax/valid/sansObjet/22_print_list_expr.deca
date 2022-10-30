@@ -1,0 +1,10 @@
+/*
+  Description: Print une liste de expression avec different type
+
+  Resultat: Syntaxiquement correct
+*/
+
+{
+  print(true, 23,"hello",null,56.23);
+  println(true, 23,"hello",null,56.23);
+}

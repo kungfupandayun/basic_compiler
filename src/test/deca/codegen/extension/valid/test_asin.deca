@@ -1,0 +1,42 @@
+/* Test arc sinus pour val< -1
+   Test arc sinus pour val== -1 
+   Test arc sinus pour val>-1 && val<0
+   Test arc sinus pour val== 0
+   Test arc sinus pour val>0 && val<1
+   Test arc sinus pour val==1
+   Test arc sinus pour val>1
+ */
+
+
+
+ #include "Math.decah"
+
+ {  
+     Math m=new Math();
+     float a,b,c,d,e,f,g,h,i,j,k,l;
+
+     a= m.asin(-0.75);
+     println("val asin -0.75 =>",a);
+     println("-0.84806");
+
+     b= m.cos(-1.0);
+     println("val asin -1 =>",b);
+     println("sa val réelle=>","-0.5403");
+
+     c= m.atan(-0.898);
+     println("val  atan -0.898 =>",c);
+     println("sa val réelle=>","-0.731709");
+
+     d= m.sin(0.0);
+     println("val sin 0 =>",d);
+     println("sa val réelle=>","0");
+
+     e= m.ulp(0.23);
+     println("val ulp 0.23=>",e);
+  
+
+
+
+
+
+ }

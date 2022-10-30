@@ -1,0 +1,22 @@
+/* Description:
+    le test qui mélange certaines utilisation pour objet et sans objet
+    (l'utilisation de boolean)
+
+    Historique:
+      cree le 23/01/2020
+*/
+
+{
+  int a = -2;
+  int b = 1;
+  int c = 4;
+  if ((b==1) && (a<b)&&(b<4) && (c!=3)&&((a+b) <= c) &&((c-a)>=b)){
+    println("Réussi attendu");
+  }
+
+  if (!(a>0)){
+    print("Réussi attendu encore!");
+  }
+
+
+}

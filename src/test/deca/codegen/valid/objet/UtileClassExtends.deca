@@ -1,0 +1,44 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	p3.z = 2
+
+*/
+
+class Point2D {
+	int x; // Abscisse
+	int y; // Ordonnee
+	// Deplace ce point
+	// de a en diagonale.
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+	}
+}
+
+class Point3D extends Point2D {
+	int z=0; // Hauteur
+	// On redefinit la methode diag,
+	// pour tenir compte de z
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+		z = z + a;
+	}
+}
+{
+	Point2D p1;
+	Point3D p3;
+	p1 = new Point2D();
+	p1.diag(1);
+	p1.x = 1; p1.y = 1;
+	p3 = new Point3D();
+	p3.diag(2);
+	println("p3.z = ", p3.z);
+	println("p1.x = ", p1.x);
+	println("p3.x = ", p3.x);
+	println("p1.y = ", p1.y);
+}

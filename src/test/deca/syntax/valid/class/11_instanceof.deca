@@ -1,0 +1,24 @@
+/*
+	Description: utilisation de l'instanceof
+
+	Resultat syntaxiquement valid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+{
+	
+
+	 if( this.hello(z) instanceof type)
+	{
+	}
+
+	
+	 if( this.hello instanceof type)
+	{
+	}
+
+}

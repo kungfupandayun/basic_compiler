@@ -1,0 +1,17 @@
+// Description:
+//    tester deux méthode avec le meme nom
+//
+
+
+class A {
+	void m(int a) {
+
+	}
+	void m() {
+
+	}
+}
+
+{
+
+}

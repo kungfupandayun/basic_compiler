@@ -1,0 +1,11 @@
+/* Description:
+    teste si on peut execute "return" dans le programme
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+{
+  return 1;
+
+}

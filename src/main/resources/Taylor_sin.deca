@@ -1,0 +1,101 @@
+class Taylor_series{
+    int j=1;
+  float val=1;
+  float factorial=1;
+
+  float power_fact(float rad, int indice)
+  {  
+    factorial=1;
+    j=1;
+    val=1;
+    while(j<=indice)
+    {
+      val=val*rad;
+      factorial=factorial*j;
+      j=j+1;     
+    }
+    return (val/factorial);
+  }
+
+
+
+	float fam(float a,float b ,float c) asm(
+					     "LOAD -3(LB), R1 
+				       LOAD -4(LB), R3 
+					     FMA -5(LB), R3
+				       LOAD R3,R0
+               BRA fin.code.Taylor_series.fam"); //load R0 pour sortir
+
+
+
+
+}
+
+{ 
+    //teta à calculer
+    int teta=0;
+    float rad=0;
+    float sumx=0;
+    float sumy=0;
+    int i=0;
+    float power; 
+    float sign=1;
+    float half_pi=1.57079632679;
+    float signx=1;
+    float signy=1;
+
+    
+    
+
+
+ Taylor_series t =new Taylor_series();
+
+ while(teta<=90){
+    println(teta);
+  
+     rad=0;
+     
+     sumx=0;
+     sumy=0;
+     i=0;
+     signx=1;
+     signy=1;
+     sign=1;
+     power=0; 
+
+    rad=(teta*half_pi)/90;
+
+      while(i<18){
+        if(i%2==1){sign=-1;} 
+        else {sign=1;}
+        power=t.power_fact(rad,2*i);
+        //sumx=sumx+sign*power;
+        sumx=t.fam(sumx,sign,power); 
+        i=i+1; 
+      }
+
+      i=0;
+      while(i<17){
+        if(i%2==1){sign=-1;} 
+        else {sign=1;}
+        power=t.power_fact(rad,2*i+1);
+        sumy=t.fam(sumy,sign,power); 
+
+        i=i+1;
+ 
+      }
+
+      printlnx("valeur de cos =>",sumx);
+      println("valeur de sin =>",sumy);
+
+
+  teta=teta+1;
+
+
+
+ }
+
+     
+   
+
+}

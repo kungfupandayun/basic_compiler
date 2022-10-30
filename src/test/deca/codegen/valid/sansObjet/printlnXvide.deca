@@ -1,0 +1,16 @@
+/*
+  Description:
+    Tester un programme simple
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+    
+    ok
+*/
+{
+	println("ok");
+	printlnx();
+	println("ok");
+}

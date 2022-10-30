@@ -1,0 +1,21 @@
+/*
+	Description: test syntax d'une méthode void sans parametre
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+
+
+*/
+
+class c{
+void setX(){
+	this.x=x;
+	;
+
+}
+}
+
+{
+
+}

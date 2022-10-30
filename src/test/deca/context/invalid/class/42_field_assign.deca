@@ -1,0 +1,19 @@
+// Description:
+//    Affectation d'un float dans un champ de type int
+//
+// Resultats:
+//    undefined field
+// 
+// Historique:
+//    cree le 01/01/2016
+
+class A {
+	int a;
+}
+
+{
+	A a;
+	float b;
+	a.a = b;
+}
+

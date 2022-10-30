@@ -1,0 +1,12 @@
+// Description:
+//    Programme qui creé une class.
+//
+// Resultats:
+//    Hello
+//
+// Historique:
+//    cree le 01/01/2020
+
+class A {
+  int x;
+}

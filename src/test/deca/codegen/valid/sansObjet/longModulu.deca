@@ -1,0 +1,25 @@
+/* Description:
+    Tester different un simple Modulu
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+
+
+
+{
+  int a;
+  int b;
+  a = ((98 % 9)%5)%((93%10)%6);
+  b = (((80+8+2+5+3)%(3+7-1))%(-2-3+3+2+6-1)); // (98 % 9 )% 5 = 3
+  if ((a == 0) && (b == 3 )){
+    print("ok");
+  } else {
+    print("erreur");
+  }
+
+
+}

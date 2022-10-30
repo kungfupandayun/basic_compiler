@@ -1,0 +1,14 @@
+/*
+	Test =>  and expression valide
+
+	Résultat=> syntaxe valid
+
+	Date=>	17/1/2020
+*/
+
+
+{
+	5 && x ;
+	5  != null;
+
+}

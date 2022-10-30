@@ -1,0 +1,13 @@
+// Description:
+//    tests de print et println sans input
+//
+// Resultats:
+//    Print rien
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+print( );
+println();
+}

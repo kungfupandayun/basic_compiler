@@ -1,0 +1,20 @@
+/* Description:
+     tester class qui possede de un field qui n'est pas une field de super class
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+
+     int get (){
+
+     }
+
+   }
+
+   class B extends A {
+
+    int get;
+
+   }

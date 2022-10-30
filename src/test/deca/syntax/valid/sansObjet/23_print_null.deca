@@ -1,0 +1,14 @@
+// Description:
+//    tests de print avec \n
+//
+// Resultats:
+//    Print rien
+//
+// Historique:
+//    cree le 10/01/2020
+
+
+{
+print(null);
+println(null);
+}

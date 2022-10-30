@@ -1,0 +1,15 @@
+/* Description:
+     tester class qui possede de method sans Param
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+
+    int getX (int x){
+        x + 2;
+    }
+
+
+   }

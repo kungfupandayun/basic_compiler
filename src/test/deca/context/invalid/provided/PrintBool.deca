@@ -1,0 +1,6 @@
+{
+  boolean x = true;
+  int y = 6;
+  boolean z = (y == 7);
+  println ((x&&z));
+}

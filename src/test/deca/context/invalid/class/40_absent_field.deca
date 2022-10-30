@@ -1,0 +1,18 @@
+// Description:
+//    Appel d'un champ inexistante
+//
+// Resultats:
+//    undefined field
+// 
+// Historique:
+//    cree le 01/01/2016
+
+class A {
+
+}
+
+{
+	A a;
+	a.a;
+}
+

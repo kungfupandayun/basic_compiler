@@ -1,0 +1,22 @@
+/* Description:
+    Tester l'appelation d'une méthode inexistante.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+
+*/
+
+class Test{
+    float a;
+    int methode(){
+      return 1;
+    }
+}
+
+{
+	Test classe = new Test();
+  classe.a = 1;
+  classe.getA();
+}

@@ -1,0 +1,16 @@
+/* Description:
+    teste la regle (3.17) (3.16) de la vérification contextuelles
+    Déclaration de variable déja définie dans l'EnvironmentExp courant
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  void methode(int d, float e){
+      float d; // erreur a ce niveau variable deja declare comme parametre
+
+  }
+}

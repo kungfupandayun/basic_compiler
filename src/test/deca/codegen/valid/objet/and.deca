@@ -1,0 +1,20 @@
+/* Description:
+    Declaration d'un class
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	3
+
+*/
+
+
+{
+	boolean a = false;
+	boolean b = true;
+	boolean x;
+	x = a&&b;
+	if(x == false){
+		println("ok");
+	}
+}

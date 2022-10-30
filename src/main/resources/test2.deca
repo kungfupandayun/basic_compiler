@@ -1,0 +1,27 @@
+class hello{
+
+    //int kitty(int a,int b) asm("LOAD -3(LB), R2
+	//				            ADD -4(LB), R3
+	//			                 LOAD R3,R0");
+
+    int superman(int a,int b){
+        int z;
+        z=a+b;
+        return z;
+    }
+
+  
+}
+
+
+{
+	float d=0;
+    float a=123;
+    float c=2;
+    float f=1;
+
+ 	
+    d=a+c*f;
+
+   
+}

@@ -1,0 +1,17 @@
+/* Description:
+    teste la regle (3.17) (3.16) de la vérification contextuelles
+    Déclaration de variable valide
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  void methode(int d, float e){}
+
+  void methode2(float c){
+    int a = a; // a est le filed de la class
+  }
+}

@@ -1,0 +1,33 @@
+/* Description:
+    teste
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int a;
+  int b;
+  int e;
+  int m1(){}  // 3
+  int m2(){}
+
+}
+
+  class B extends A{
+  int a;
+  int b;
+  int c;
+  int m3(){} // 4
+  int m2(){}
+
+}
+
+  class C extends B{
+  int d;
+  int e;
+  int m1(){}
+  int m4(){}  // 6 
+  int m5(){}
+
+  }

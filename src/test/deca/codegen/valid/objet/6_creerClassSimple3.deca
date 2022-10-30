@@ -1,0 +1,14 @@
+/* Description:
+    Declaration d'un class complet
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int y;
+
+  int x( float z){
+    print("ok");
+  }
+}

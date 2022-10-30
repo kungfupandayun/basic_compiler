@@ -1,0 +1,12 @@
+/* Description:
+     tester class avec une list de variables
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class  newclass {
+    int x;
+    float y = 0.5;
+    protected int z;
+   }

@@ -1,0 +1,12 @@
+/* Description:
+    Declaration d'un class sans field
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int x(){
+
+  }
+}

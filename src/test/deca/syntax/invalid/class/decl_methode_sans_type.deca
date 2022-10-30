@@ -1,0 +1,19 @@
+/*
+	Description: decl methode sans types
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class a extends b{
+	
+
+	hello( ){
+		print("hello");
+	}
+	
+}

@@ -1,0 +1,1485 @@
+; start main program
+	TSTO #16
+	BOV stack_overflow_error
+	ADDSP #19
+; La table des Méthode de Object
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Code de la table des méthodes de Math
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.Math._findMod, R0
+	STORE R0, 5(GB)
+	LOAD code.Math._Q1, R0
+	STORE R0, 6(GB)
+	LOAD code.Math._power_fact, R0
+	STORE R0, 7(GB)
+	LOAD code.Math._fam, R0
+	STORE R0, 8(GB)
+	LOAD code.Math._sin, R0
+	STORE R0, 9(GB)
+	LOAD code.Math._cos, R0
+	STORE R0, 10(GB)
+	LOAD code.Math._asin, R0
+	STORE R0, 11(GB)
+	LOAD code.Math._atan, R0
+	STORE R0, 12(GB)
+	LOAD code.Math._ulp, R0
+	STORE R0, 13(GB)
+; Main program
+; Variables declarations:
+; iniitialisation 
+	NEW #15, R2
+	BOV heap_overflow
+	LEA 3(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.Math
+	POP R2
+	STORE R2, 14(GB)
+; Beginning of main instructions:
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+; exp
+	LOAD 14(GB), R2
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 0(SP)
+	LOAD #0x1.c7ae14p-1, R3
+	OPP R3, R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 8(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, 16(GB)
+	WSTR "val of b=>"
+; exp
+	LOAD 16(GB), R1
+	WFLOAT
+	WNL
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+; exp
+	LOAD 14(GB), R2
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 0(SP)
+	LOAD #0x1.eb851ep-4, R3
+	OPP R3, R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 8(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, 17(GB)
+	WSTR "val of c=>"
+; exp
+	LOAD 17(GB), R1
+	WFLOAT
+	WNL
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+; exp
+	LOAD 14(GB), R2
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 0(SP)
+	LOAD #0x1.0p-1, R3
+	OPP R3, R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 8(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, 18(GB)
+	WSTR "val of d=>"
+; exp
+	LOAD 18(GB), R1
+	WFLOAT
+	WNL
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+; exp
+	LOAD 14(GB), R2
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 0(SP)
+	LOAD #0x1.4dc29p3, R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 6(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, 19(GB)
+	WSTR "val of d=>"
+; exp
+	LOAD 19(GB), R1
+	WFLOAT
+	WNL
+	HALT
+init.Object:
+	RTS
+code.Object.equals:
+init.Math:
+	LOAD -2(LB), R1
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #0x1.921fb6p0, R2
+	LOAD -2(LB), R1
+	STORE R2, 1(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 2(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 3(R1)
+; Initialisation d'un attribut
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 4(R1)
+; Initialisation d'un attribut
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 5(R1)
+; Initialisation d'un attribut
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 6(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 7(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 8(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 9(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 10(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 11(R1)
+; Initialisation d'un attribut
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	LOAD -2(LB), R1
+	STORE R2, 12(R1)
+; Initialisation d'un attribut
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 13(R1)
+; Initialisation d'un attribut
+	LOAD #0, R2
+	LOAD -2(LB), R1
+	STORE R2, 14(R1)
+	RTS
+code.Math._findMod:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; iniitialisation 
+; param
+	LOAD -3(LB), R2
+	STORE R2, 1(LB)
+; Beginning of methode instructions:
+	BRA E_cond.1
+E_debut.1:
+; assign
+; exp
+	LOAD 1(LB), R2
+	SUB -4(LB), R2
+	BOV arithmetic_overflow
+	STORE R2, 1(LB)
+E_cond.1:
+; exp
+	LOAD 1(LB), R2
+	CMP -4(LB), R2
+	SGE R2
+	CMP #1, R2
+	BEQ E_debut.1
+; exp
+	LOAD 1(LB), R2
+	LOAD R2, R0
+	BRA fin.code.Math._findMod
+	WSTR "[ReturnError] : the method _findMod is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._findMod:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._Q1:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 2(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 3(R2)
+; param
+	LOAD -3(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLT R2
+	CMP #0, R2
+	BEQ E_sinon.2
+; Instructions
+E_inst.2:
+; assign
+	LOAD -2(LB), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	STORE R3, 0(SP)
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 3(R3)
+; assign
+; param
+	LOAD -3(LB), R3
+	OPP R3, R3
+	STORE R3, -3(LB)
+	BRA E_end.2
+E_sinon.2:
+E_end.2:
+; param
+	LOAD -3(LB), R2
+	LOAD #4, R3
+	FLOAT R3, R3
+	LOAD -2(LB), R4
+	MUL 1(R4), R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SGE R2
+	CMP #0, R2
+	BEQ E_sinon.3
+; Instructions
+E_inst.3:
+; assign
+	TSTO #5
+	BOV stack_overflow_error
+	ADDSP #3
+	LOAD -2(LB), R3
+	LOAD -2(LB), R3
+	STORE R3, 0(SP)
+; param
+	LOAD -3(LB), R4
+	STORE R4, -1(SP)
+	LOAD #4, R5
+	FLOAT R5, R5
+	LOAD -2(LB), R6
+	MUL 1(R6), R5
+	BOV arithmetic_overflow
+	STORE R5, -2(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	LOAD 0(R3), R3
+	BSR 2(R3)
+	LOAD R0, R3
+	SUBSP #3
+	STORE R3, -3(LB)
+	BRA E_end.3
+E_sinon.3:
+E_end.3:
+; param
+	LOAD -3(LB), R2
+	LOAD #3, R3
+	FLOAT R3, R3
+	LOAD -2(LB), R4
+	MUL 1(R4), R3
+	BOV arithmetic_overflow
+	LOAD #2, R4
+	FLOAT R4, R4
+	DIV R4, R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SGE R2
+; param
+	LOAD -3(LB), R3
+	LOAD #4, R4
+	FLOAT R4, R4
+	LOAD -2(LB), R5
+	MUL 1(R5), R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SLT R3
+	MUL R3, R2
+	CMP #0, R2
+	BEQ E_sinon.4
+; Instructions
+E_inst.4:
+; assign
+	LOAD -2(LB), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	STORE R3, 0(SP)
+; selection1
+	LOAD -2(LB), R4
+	LOAD 3(R4), R4
+	LOAD #1, R5
+	OPP R5, R5
+	FLOAT R5, R5
+	MUL R5, R4
+	BOV arithmetic_overflow
+	STORE R4, 3(R3)
+; assign
+	LOAD #4, R3
+	FLOAT R3, R3
+	LOAD -2(LB), R4
+	MUL 1(R4), R3
+	BOV arithmetic_overflow
+	SUB -3(LB), R3
+	BOV arithmetic_overflow
+	STORE R3, -3(LB)
+	BRA E_end.4
+E_sinon.4:
+E_end.4:
+; param
+	LOAD -3(LB), R2
+	LOAD #2, R3
+	FLOAT R3, R3
+	LOAD -2(LB), R4
+	MUL 1(R4), R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SGE R2
+; param
+	LOAD -3(LB), R3
+	LOAD #3, R4
+	FLOAT R4, R4
+	LOAD -2(LB), R5
+	MUL 1(R5), R4
+	BOV arithmetic_overflow
+	LOAD #2, R5
+	FLOAT R5, R5
+	DIV R5, R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SLT R3
+	MUL R3, R2
+	CMP #0, R2
+	BEQ E_sinon.5
+; Instructions
+E_inst.5:
+; assign
+	LOAD -2(LB), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	STORE R3, 0(SP)
+; selection1
+	LOAD -2(LB), R4
+	LOAD 3(R4), R4
+	LOAD #1, R5
+	OPP R5, R5
+	FLOAT R5, R5
+	MUL R5, R4
+	BOV arithmetic_overflow
+	STORE R4, 3(R3)
+; assign
+	LOAD -2(LB), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	STORE R3, 0(SP)
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 2(R3)
+; assign
+; param
+	LOAD -3(LB), R3
+	LOAD #2, R4
+	FLOAT R4, R4
+	LOAD -2(LB), R5
+	MUL 1(R5), R4
+	BOV arithmetic_overflow
+	SUB R4, R3
+	BOV arithmetic_overflow
+	STORE R3, -3(LB)
+	BRA E_end.5
+E_sinon.5:
+E_end.5:
+; param
+	LOAD -3(LB), R2
+	LOAD -2(LB), R3
+	CMP 1(R3), R2
+	SGE R2
+; param
+	LOAD -3(LB), R3
+	LOAD #2, R4
+	FLOAT R4, R4
+	LOAD -2(LB), R5
+	MUL 1(R5), R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SLT R3
+	MUL R3, R2
+	CMP #0, R2
+	BEQ E_sinon.6
+; Instructions
+E_inst.6:
+; assign
+	LOAD -2(LB), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	STORE R3, 0(SP)
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 2(R3)
+; assign
+	LOAD #2, R3
+	FLOAT R3, R3
+	LOAD -2(LB), R4
+	MUL 1(R4), R3
+	BOV arithmetic_overflow
+	SUB -3(LB), R3
+	BOV arithmetic_overflow
+	STORE R3, -3(LB)
+	BRA E_end.6
+E_sinon.6:
+E_end.6:
+; param
+	LOAD -3(LB), R2
+	LOAD R2, R0
+	BRA fin.code.Math._Q1
+	WSTR "[ReturnError] : the method _Q1 is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._Q1:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._power_fact:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 4(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 6(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 5(R2)
+	BRA E_cond.7
+E_debut.7:
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 4(R3), R3
+	MUL -3(LB), R3
+	BOV arithmetic_overflow
+	STORE R3, 4(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 5(R3), R3
+	LOAD -2(LB), R4
+	MUL 6(R4), R3
+	BOV arithmetic_overflow
+	STORE R3, 5(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 6(R3), R3
+	LOAD #1, R4
+	FLOAT R4, R4
+	ADD R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 6(R2)
+E_cond.7:
+	LOAD -2(LB), R2
+	LOAD 6(R2), R2
+; param
+	LOAD -4(LB), R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLE R2
+	CMP #1, R2
+	BEQ E_debut.7
+	LOAD -2(LB), R2
+	LOAD 4(R2), R2
+	LOAD -2(LB), R3
+	DIV 5(R3), R2
+	BOV arithmetic_overflow
+	LOAD R2, R0
+	BRA fin.code.Math._power_fact
+	WSTR "[ReturnError] : the method _power_fact is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._power_fact:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._fam:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+LOAD -3(LB), R1 
+	  LOAD -4(LB), R3 
+	  FMA -5(LB), R3
+	  LOAD R3,R0
+    BRA fin.code.Math._fam
+	WSTR "[ReturnError] : the method _fam is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._fam:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._sin:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	STORE R3, 7(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 8(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 4(R2)
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+	LOAD -2(LB), R2
+	LOAD -2(LB), R2
+	STORE R2, 0(SP)
+; param
+	LOAD -3(LB), R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 3(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, -3(LB)
+	BRA E_cond.8
+E_debut.8:
+	LOAD -2(LB), R2
+	LOAD 7(R2), R2
+	REM #2, R2
+	BOV arithmetic_overflow
+	CMP #1, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.9
+; Instructions
+E_inst.9:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 8(R3)
+	BRA E_end.9
+E_sinon.9:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	FLOAT R4, R4
+	STORE R4, 8(R3)
+E_end.9:
+; assign
+	LOAD -2(LB), R2
+	TSTO #6
+	BOV stack_overflow_error
+	ADDSP #4
+	LOAD -2(LB), R3
+	LOAD -2(LB), R3
+	STORE R3, 0(SP)
+	LOAD -2(LB), R4
+	LOAD 4(R4), R4
+	STORE R4, -1(SP)
+	LOAD -2(LB), R5
+	LOAD 8(R5), R5
+	STORE R5, -2(SP)
+	TSTO #5
+	BOV stack_overflow_error
+	ADDSP #3
+	LOAD -2(LB), R6
+	LOAD -2(LB), R6
+	STORE R6, 0(SP)
+; param
+	LOAD -3(LB), R7
+	STORE R7, -1(SP)
+	LOAD #2, R8
+	LOAD -2(LB), R9
+	MUL 7(R9), R8
+	ADD #1, R8
+	STORE R8, -2(SP)
+	LOAD 0(SP), R6
+	CMP #null, R6
+	BEQ dereferencement.null
+	LOAD 0(R6), R6
+	BSR 4(R6)
+	LOAD R0, R6
+	SUBSP #3
+	STORE R6, -3(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	LOAD 0(R3), R3
+	BSR 5(R3)
+	LOAD R0, R3
+	SUBSP #4
+	STORE R3, 4(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 7(R3), R3
+	ADD #1, R3
+	STORE R3, 7(R2)
+E_cond.8:
+	LOAD -2(LB), R2
+	LOAD 7(R2), R2
+	CMP #12, R2
+	SLT R2
+	CMP #1, R2
+	BEQ E_debut.8
+	LOAD -2(LB), R2
+	LOAD 3(R2), R2
+	LOAD -2(LB), R3
+	MUL 4(R3), R2
+	BOV arithmetic_overflow
+	LOAD R2, R0
+	BRA fin.code.Math._sin
+	WSTR "[ReturnError] : the method _sin is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._sin:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._cos:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	STORE R3, 7(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 8(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 5(R2)
+; assign
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+	LOAD -2(LB), R2
+	LOAD -2(LB), R2
+	STORE R2, 0(SP)
+; param
+	LOAD -3(LB), R3
+	STORE R3, -1(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 3(R2)
+	LOAD R0, R2
+	SUBSP #2
+	STORE R2, -3(LB)
+	BRA E_cond.10
+E_debut.10:
+	LOAD -2(LB), R2
+	LOAD 7(R2), R2
+	REM #2, R2
+	BOV arithmetic_overflow
+	CMP #1, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.11
+; Instructions
+E_inst.11:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 8(R3)
+	BRA E_end.11
+E_sinon.11:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	FLOAT R4, R4
+	STORE R4, 8(R3)
+E_end.11:
+; assign
+	LOAD -2(LB), R2
+	TSTO #6
+	BOV stack_overflow_error
+	ADDSP #4
+	LOAD -2(LB), R3
+	LOAD -2(LB), R3
+	STORE R3, 0(SP)
+	LOAD -2(LB), R4
+	LOAD 5(R4), R4
+	STORE R4, -1(SP)
+	LOAD -2(LB), R5
+	LOAD 8(R5), R5
+	STORE R5, -2(SP)
+	TSTO #5
+	BOV stack_overflow_error
+	ADDSP #3
+	LOAD -2(LB), R6
+	LOAD -2(LB), R6
+	STORE R6, 0(SP)
+; param
+	LOAD -3(LB), R7
+	STORE R7, -1(SP)
+	LOAD #2, R8
+	LOAD -2(LB), R9
+	MUL 7(R9), R8
+	STORE R8, -2(SP)
+	LOAD 0(SP), R6
+	CMP #null, R6
+	BEQ dereferencement.null
+	LOAD 0(R6), R6
+	BSR 4(R6)
+	LOAD R0, R6
+	SUBSP #3
+	STORE R6, -3(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	LOAD 0(R3), R3
+	BSR 5(R3)
+	LOAD R0, R3
+	SUBSP #4
+	STORE R3, 5(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 7(R3), R3
+	ADD #1, R3
+	STORE R3, 7(R2)
+E_cond.10:
+	LOAD -2(LB), R2
+	LOAD 7(R2), R2
+	CMP #12, R2
+	SLT R2
+	CMP #1, R2
+	BEQ E_debut.10
+	LOAD -2(LB), R2
+	LOAD 2(R2), R2
+	LOAD -2(LB), R3
+	MUL 5(R3), R2
+	BOV arithmetic_overflow
+	LOAD R2, R0
+	BRA fin.code.Math._cos
+	WSTR "[ReturnError] : the method _cos is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._cos:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._asin:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 14(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 11(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 13(R2)
+; param
+	LOAD -3(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLE R2
+	CMP #0, R2
+	BEQ E_sinon.12
+; Instructions
+E_inst.12:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 14(R3)
+; assign
+; param
+	LOAD -3(LB), R3
+	OPP R3, R3
+	STORE R3, -3(LB)
+	BRA E_end.12
+E_sinon.12:
+E_end.12:
+; param
+	LOAD -3(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLE R2
+	CMP #0, R2
+	BEQ E_sinon.13
+; Instructions
+E_inst.13:
+	BRA E_cond.14
+E_debut.14:
+; assign
+	LOAD -2(LB), R3
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+	LOAD -2(LB), R4
+	LOAD -2(LB), R4
+	STORE R4, 0(SP)
+	LOAD -2(LB), R5
+	LOAD 13(R5), R5
+	STORE R5, -1(SP)
+	LOAD 0(SP), R4
+	CMP #null, R4
+	BEQ dereferencement.null
+	LOAD 0(R4), R4
+	BSR 6(R4)
+	LOAD R0, R4
+	SUBSP #2
+	STORE R4, 11(R3)
+; assign
+	LOAD -2(LB), R3
+	LOAD -2(LB), R4
+	LOAD 13(R4), R4
+	ADD #0x1.a36e2ep-14, R4
+	BOV arithmetic_overflow
+	STORE R4, 13(R3)
+E_cond.14:
+	LOAD -2(LB), R3
+	LOAD 11(R3), R3
+; param
+	LOAD -3(LB), R4
+	SUB #0x1.a36e2ep-13, R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SGE R3
+	LOAD -2(LB), R4
+	LOAD 11(R4), R4
+; param
+	LOAD -3(LB), R5
+	ADD #0x1.a36e2ep-13, R5
+	BOV arithmetic_overflow
+	CMP R5, R4
+	SLE R4
+	MUL R4, R3
+	CMP #0, R3
+	SEQ R3
+	LOAD -2(LB), R4
+	LOAD 13(R4), R4
+	LOAD -2(LB), R5
+	CMP 1(R5), R4
+	SLE R4
+	MUL R4, R3
+	CMP #1, R3
+	BEQ E_debut.14
+	BRA E_end.13
+E_sinon.13:
+E_end.13:
+	LOAD -2(LB), R2
+	LOAD 13(R2), R2
+	LOAD -2(LB), R3
+	MUL 14(R3), R2
+	BOV arithmetic_overflow
+	LOAD R2, R0
+	BRA fin.code.Math._asin
+	WSTR "[ReturnError] : the method _asin is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._asin:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._atan:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #1, R3
+	FLOAT R3, R3
+	STORE R3, 14(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 11(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	STORE R3, 13(R2)
+; param
+	LOAD -3(LB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLE R2
+	CMP #0, R2
+	BEQ E_sinon.15
+; Instructions
+E_inst.15:
+; assign
+	LOAD -2(LB), R3
+	LOAD #1, R4
+	OPP R4, R4
+	FLOAT R4, R4
+	STORE R4, 14(R3)
+; assign
+; param
+	LOAD -3(LB), R3
+	OPP R3, R3
+	STORE R3, -3(LB)
+	BRA E_end.15
+E_sinon.15:
+E_end.15:
+	BRA E_cond.16
+E_debut.16:
+; assign
+	LOAD -2(LB), R2
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+	LOAD -2(LB), R3
+	LOAD -2(LB), R3
+	STORE R3, 0(SP)
+	LOAD -2(LB), R4
+	LOAD 13(R4), R4
+	STORE R4, -1(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	LOAD 0(R3), R3
+	BSR 6(R3)
+	LOAD R0, R3
+	SUBSP #2
+	STORE R3, 11(R2)
+; assign
+	LOAD -2(LB), R2
+	TSTO #4
+	BOV stack_overflow_error
+	ADDSP #2
+	LOAD -2(LB), R3
+	LOAD -2(LB), R3
+	STORE R3, 0(SP)
+	LOAD -2(LB), R4
+	LOAD 13(R4), R4
+	STORE R4, -1(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ dereferencement.null
+	LOAD 0(R3), R3
+	BSR 7(R3)
+	LOAD R0, R3
+	SUBSP #2
+	STORE R3, 12(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 11(R3), R3
+	LOAD -2(LB), R4
+	DIV 12(R4), R3
+	BOV arithmetic_overflow
+	STORE R3, 11(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 13(R3), R3
+	ADD #0x1.0624dep-10, R3
+	BOV arithmetic_overflow
+	STORE R3, 13(R2)
+E_cond.16:
+	LOAD -2(LB), R2
+	LOAD 11(R2), R2
+; param
+	LOAD -3(LB), R3
+	SUB #0x1.47ae14p-9, R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SGE R2
+	LOAD -2(LB), R3
+	LOAD 11(R3), R3
+; param
+	LOAD -3(LB), R4
+	ADD #0x1.47ae14p-9, R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SLE R3
+	MUL R3, R2
+	CMP #0, R2
+	SEQ R2
+	LOAD -2(LB), R3
+	LOAD 13(R3), R3
+	LOAD -2(LB), R4
+	CMP 1(R4), R3
+	SLT R3
+	MUL R3, R2
+	CMP #1, R2
+	BEQ E_debut.16
+	LOAD -2(LB), R2
+	LOAD 13(R2), R2
+	LOAD -2(LB), R3
+	MUL 14(R3), R2
+	BOV arithmetic_overflow
+	LOAD R2, R0
+	BRA fin.code.Math._atan
+	WSTR "[ReturnError] : the method _atan is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._atan:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+code.Math._ulp:
+	TSTO #14
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R6
+	PUSH R7
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+	LOAD -2(LB), R2
+	LOAD #0, R3
+	STORE R3, 7(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD #2, R3
+	FLOAT R3, R3
+	STORE R3, 4(R2)
+; assign
+	LOAD -2(LB), R2
+; param
+	LOAD -3(LB), R3
+	STORE R3, 12(R2)
+; param
+	LOAD -3(LB), R1
+	WFLOATX
+	WNL
+	BRA E_cond.17
+E_debut.17:
+; assign
+; param
+	LOAD -3(LB), R2
+	LOAD #2, R3
+	FLOAT R3, R3
+	MUL R3, R2
+	BOV arithmetic_overflow
+	STORE R2, -3(LB)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 7(R3), R3
+	ADD #1, R3
+	STORE R3, 7(R2)
+E_cond.17:
+; param
+	LOAD -3(LB), R2
+; param
+	LOAD -3(LB), R3
+	LOAD #1, R4
+	FLOAT R4, R4
+	ADD R4, R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SNE R2
+	CMP #1, R2
+	BEQ E_debut.17
+	BRA E_cond.18
+E_debut.18:
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 4(R3), R3
+	LOAD #2, R4
+	FLOAT R4, R4
+	DIV R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 4(R2)
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 7(R3), R3
+	SUB #1, R3
+	STORE R3, 7(R2)
+E_cond.18:
+	LOAD -2(LB), R2
+	LOAD 7(R2), R2
+	CMP #0, R2
+	SGT R2
+	CMP #1, R2
+	BEQ E_debut.18
+; assign
+	LOAD -2(LB), R2
+	LOAD -2(LB), R3
+	LOAD 12(R3), R3
+	LOAD -2(LB), R4
+	ADD 4(R4), R3
+	BOV arithmetic_overflow
+	STORE R3, 12(R2)
+	LOAD -2(LB), R2
+	LOAD 12(R2), R1
+	WFLOATX
+	WNL
+	LOAD -2(LB), R3
+	LOAD 4(R3), R3
+	LOAD R3, R0
+	BRA fin.code.Math._ulp
+	WSTR "[ReturnError] : the method _ulp is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.Math._ulp:
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP R7
+	POP R6
+	POP R5
+	POP R4
+	POP R3
+	POP R2
+	RTS
+; end main program
+arithmetic_overflow:
+	WSTR "Arithmetic overflow"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Stack overflow"
+	WNL
+	ERROR
+heap_overflow:
+	WSTR "Heap overflow"
+	WNL
+	ERROR
+division_zero:
+	WSTR "Diviseur ne doit pas egal 0"
+	WNL
+	ERROR
+varaible_non_defini:
+	WSTR "Variable n'est pas défini"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencing null pointer"
+	WNL
+	ERROR

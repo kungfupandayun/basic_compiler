@@ -1,0 +1,20 @@
+/* Description:
+    Tester l'appel d'une méthode avec un mauvais paramétre.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+*/
+
+class Test{
+    int a;
+    int mult(int b){
+        return  a*b;
+    }
+}
+
+{
+	Test classe = new Test();
+  int b = classe.mult("test");
+}

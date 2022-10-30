@@ -1,0 +1,17 @@
+/* Description:
+     tester si une méthode non dédfinie et appelée génére une erreur.
+
+    Historique:
+      cree le 23/01/2020
+
+    Sortie attendue : setX is not declared neither in the current class nor in its super Classes
+*/
+
+
+class A {
+
+}
+{
+  A a = new A();
+  a.setX();
+}

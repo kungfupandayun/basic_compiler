@@ -1,0 +1,133 @@
+{
+
+		//le teta à tester [-PI;PI]
+		float teta=1; 						//1(GB)
+
+		float K=0.60725293510314;		//2(GB)
+		float pi=3.1415926535897932;//3(GB)
+		float x=K;									//4(GB)
+		float y=0;									//5(GB)
+		float z;										//6(GB)
+		float v=1.0;								//7(GB)
+		int i=0;										//8(GB)
+		float tmp_teta;							//9(GB)
+		float tx,ty,tz;							//10,11,12(GB)
+
+		//TABLEAU ARCTAN(1/2^i)
+
+		float t0=  0.78539816339745 ;
+		float t1=  0.46364760900081 ;
+		float t2=  0.24497866312686 ;
+		float t3=  0.12435499454676 ;
+		float t4=  0.06241880999596 ;
+		float t5=  0.03123983343027 ;
+		float t6=  0.01562372862048 ;
+		float t7=  0.00781234106010 ;
+		float t8=  0.00390623013197 ;
+		float t9=  0.00195312251648 ;
+		float t10=  0.00097656218956 ;
+		float t11=  0.00048828121119 ;
+		float t12=  0.00024414062015 ;
+		float t13=  0.00012207031189 ;
+		float t14=  0.00006103515617 ;
+		float t15=  0.00003051757812 ;
+		float t16=  0.00001525878906 ;
+		float t17=  0.00000762939453 ;
+		float t18=  0.00000381469727 ;
+		float t19=  0.00000190734863 ;
+		float t20=  0.00000095367432 ;
+		float t21=  0.00000047683716 ;
+		float t22=  0.00000023841858 ;
+		float t23=  0.00000011920929 ;
+		float t24=  0.00000005960464 ;
+		float t25=  0.00000002980232 ;
+		float t26=  0.00000001490116 ;
+		float t27=  0.00000000745058 ;
+		float t28=  0.00000000372529 ;
+		float t29=  0.00000000186265 ;
+		float t30=  0.00000000093132 ;
+		float t31=  0.00000000046566 ;
+
+		int signx=1;//45(GB)
+		int signy=1;//46(GB)
+
+		//Rendre le signy à négative si teta<0
+		if(teta<0){  //E_inst.1: LOAD 1(GB), R2  /" LOAD #0, R3 /* FLOAT R3, R3/*CMP R3, R2
+		 	signy=-1;			//SLT R2
+			teta=-teta;
+		}
+
+		//Rendre le signx à négative si teta >90
+		if(teta>pi/2&&teta<=pi){
+			teta=pi-teta;
+			signx=-1; //E_inst.2:
+		}
+
+		z=teta;
+
+		while(i<=9 && (teta>=-pi &&teta<=pi))
+		{
+			//ca marche que avec 8 itérations
+			if(i==0){tmp_teta=t0;}
+			if(i==1){tmp_teta=t1;}
+			if(i==2){tmp_teta=t2;}
+			if(i==3){tmp_teta=t3;}
+			if(i==4){tmp_teta=t4;}
+			if(i==5){tmp_teta=t5;}
+			if(i==6){tmp_teta=t6;}
+			if(i==7){tmp_teta=t7;}
+			if(i==8){tmp_teta=t8;}
+			/*if(i==9){tmp_teta=t9;}
+			if(i==10){tmp_teta=t10;}
+			if(i==11){tmp_teta=t11;}
+			if(i==12){tmp_teta=t12;}
+			if(i==13){tmp_teta=t13;}
+			if(i==14){tmp_teta=t14;}
+			if(i==15){tmp_teta=t15;}*/
+
+
+			if(z>=0)
+			{
+				ty=-y;
+				//tx=x+ty*v; //x=>4 y=>5 v=>7
+				float fsm1() asm( "LOAD 11(GB), R14
+							   					LOAD 4(GB), R1
+						     					FSM 7(GB),R14
+							   					STORE R14,10(GB)");
+				//ty=y+x*v;
+				float fsm2 () asm( "LOAD 4(GB), R14
+							   LOAD 5(GB), R1
+						     FSM 7(GB),R14
+							   STORE R14,11(GB)");
+				tz=z-tmp_teta;
+
+			}
+			else{
+				tx=-x;
+				//ty=y-x*v;
+				float fsm3 () ( "LOAD 10(GB), R14
+							LOAD 5(GB), R1
+						  FSM 7(GB),R14
+						  STORE R14,11(GB)");
+				//tx=x+y*v;
+				float fsm4 () ( "LOAD 5(GB), R14
+							   LOAD 4(GB), R1
+						     FSM 7(GB),R14
+							   STORE R14,10(GB)");
+
+				tz=z+tmp_teta;
+
+			}
+			x=tx;
+			y=ty;
+			z=tz;
+			v=v*0.5;
+			i=i+1;
+		}
+
+		if(teta>=-pi&& teta<=pi){
+			println("cos=>",signx*x);
+			println("sin=>",signy*y);
+		}
+
+}

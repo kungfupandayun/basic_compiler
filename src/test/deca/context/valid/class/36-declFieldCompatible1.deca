@@ -1,0 +1,26 @@
+/* Description:
+    teste la regle (3.7) de la vérification contextuelles
+    Déclaration de champ avec initialisation compatibles
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int x;
+  float a = x; // assing compatible entre float et int
+  Object b = new B(); // B est un sous type de Objet
+  A c = new C(); // C est un sous type de A
+  D d = new E(); // E est un sous type de D
+
+}
+
+class B extends A {
+}
+class C extends A{
+}
+class D extends B{
+}
+
+class E extends D {
+}

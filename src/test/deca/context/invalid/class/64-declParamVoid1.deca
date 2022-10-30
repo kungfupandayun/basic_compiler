@@ -1,0 +1,11 @@
+/* Description:
+    teste la regle (2.9) de la vérification contextuelles
+    Déclaration de paramètre void
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int methode(void c){} // c est de type void
+}

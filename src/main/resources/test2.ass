@@ -1,0 +1,93 @@
+; start main program
+	TSTO #8
+	BOV stack_overflow_error
+	ADDSP #9
+; La table des Méthode de Object
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Code de la table des méthodes de hello
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.hello.superman, R0
+	STORE R0, 5(GB)
+; Main program
+; Variables declarations:
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 6(GB)
+; iniitialisation 
+	LOAD #123, R2
+	FLOAT R2, R2
+	STORE R2, 7(GB)
+; iniitialisation 
+	LOAD #2, R2
+	FLOAT R2, R2
+	STORE R2, 8(GB)
+; iniitialisation 
+	LOAD #1, R2
+	FLOAT R2, R2
+	STORE R2, 9(GB)
+; Beginning of main instructions:
+; assign
+; exp
+	LOAD 7(GB), R1
+; exp
+	LOAD 8(GB), R3
+	FMA 9(GB), R3
+	BOV arithmetic_overflow
+	STORE R3, 6(GB)
+	HALT
+init.Object:
+	RTS
+code.Object.equals:
+init.hello:
+	RTS
+code.hello.superman:
+	TSTO #0
+	BOV stack_overflow_error
+; Variables declarations:
+; Beginning of methode instructions:
+; assign
+; param
+	LOAD -3(LB), R2
+	ADD -4(LB), R2
+	STORE R2, 10(GB)
+; exp
+	LOAD 10(GB), R2
+	LOAD R2, R0
+	BRA fin.code.hello.superman
+	WSTR "Erreur : sortie de la methode superman sans return"
+	WNL
+	ERROR
+fin.code.hello.superman:
+	RTS
+; end main program
+arithmetic_overflow:
+	WSTR "Arithmetic overflow"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Stack overflow"
+	WNL
+	ERROR
+heap_overflow:
+	WSTR "Heap overflow"
+	WNL
+	ERROR
+division_zero:
+	WSTR "Diviseur ne doit pas egal 0"
+	WNL
+	ERROR
+varaible_non_defini:
+	WSTR "Variable n'est pas défini"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencing null pointer"
+	WNL
+	ERROR

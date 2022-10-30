@@ -1,0 +1,19 @@
+/* Description:
+    teste la regle (3.31)   de la vérification contextuelles
+    print une expression different de int,float,string
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int methode(int a,int b){
+    return 5;
+  }
+  void methode2(){
+    print(methode(4,4)); // Ceci est un methode Call
+  }
+}
+class B {
+
+}

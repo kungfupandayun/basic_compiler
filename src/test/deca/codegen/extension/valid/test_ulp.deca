@@ -1,0 +1,44 @@
+/* Test ulp pour différentes valeurs
+ */
+
+
+
+ #include "Math.decah"
+
+ {  
+     Math m=new Math();
+     float a,b,c,d,e,f,g,h,i,j,k,l;
+
+     a= m.ulp(-23.0);
+     println("val ulp -23 =>",a);
+ 
+
+     b= m.ulp(-1);
+     println("val ulp -1 =>",b);
+
+
+     c= m.ulp(-0.898);
+     println("val  ulp -0.898 =>",c);
+
+
+     d= m.ulp(0);
+     println("val ulp 0 =>",d);
+
+
+     e= m.ulp(0.23);
+     println("val ulp 0.23=>",e);
+
+     f= m.ulp(1);
+     println("val ulp 1 =>",f);
+
+
+     g= m.ulp(3.898);
+     println("val ulp 3.898 =>",g);
+
+     h= m.ulp(1.570796327);
+     println("val ulp pi/2 =>",h);
+
+
+
+
+ }

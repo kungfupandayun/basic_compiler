@@ -1,0 +1,17 @@
+/* Description:
+    teste la regle (3.24)  de la vérification contextuelles
+    L'instruction return dans une methode de type de retour Void
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  void methode(int d, float e){
+    int a;
+    return a; // erreur dans cette ligne la methode ne retourne rien
+  }
+
+}

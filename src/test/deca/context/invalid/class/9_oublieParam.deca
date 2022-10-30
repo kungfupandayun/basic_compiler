@@ -1,0 +1,21 @@
+/* Description:
+    Tester l'oublie d'un paramétre quand on veut appeler une méthode.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+*/
+
+class Test{
+    int a;
+    int mult(int b){
+        a = a*b;
+        return a;
+    }
+}
+
+{
+	Test classe = new Test();
+  int b = classe.mult();
+}

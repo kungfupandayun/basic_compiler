@@ -1,0 +1,14 @@
+/* Description:
+     tester des assign avec  limitation de nombre de registres
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+{
+  int x = 1;
+  int a = 0;
+  a = a + 1;
+  x = 3;
+  println(x);
+}

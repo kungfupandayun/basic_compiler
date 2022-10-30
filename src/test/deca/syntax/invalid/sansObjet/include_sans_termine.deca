@@ -1,0 +1,12 @@
+/* Description:
+    tests de programme incorrect lexicalement
+
+ Resultats:
+    ligne 12 : Erreur, include sans terminé (sur fin de fichier)
+
+ Historique:
+    cree le 10/01/2020
+*/
+
+// include sans terminé
+#include "jdzjdioad.decah

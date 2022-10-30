@@ -1,0 +1,15 @@
+// Description:
+//  Test de la régle 3.25
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      int x = 0;
+      while (true){
+        x = x + 1;
+      }
+}

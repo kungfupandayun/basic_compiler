@@ -1,0 +1,125 @@
+; start main program
+	TSTO #8
+	BOV stack_overflow_error
+	ADDSP #9
+; La table des Méthode de Object
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Code de la table des méthodes de hello
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.hello.superman, R0
+	STORE R0, 5(GB)
+; Main program
+; Variables declarations:
+; iniitialisation 
+	LOAD #0, R2
+	STORE R2, 6(GB)
+; iniitialisation 
+	LOAD #123, R2
+	STORE R2, 7(GB)
+; iniitialisation 
+	LOAD #2, R2
+	STORE R2, 8(GB)
+; iniitialisation 
+	NEW #1, R2
+	BOV heap_overflow
+	LEA 3(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.hello
+	POP R2
+	STORE R2, 9(GB)
+; Beginning of main instructions:
+; assign
+	TSTO #5
+	BOV stack_overflow_error
+	ADDSP #3
+; exp
+	LOAD 9(GB), R2
+; exp
+	LOAD 9(GB), R2
+	STORE R2, 0(SP)
+	LOAD #2, R3
+	STORE R3, -1(SP)
+	LOAD #4, R4
+	STORE R4, -2(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 0(R2), R2
+	BSR 2(R2)
+	LOAD R0, R2
+	SUBSP #3
+	STORE R2, 8(GB)
+	WSTR "c=>"
+; exp
+	LOAD 8(GB), R1
+	WINT
+	HALT
+init.Object:
+	RTS
+code.Object.equals:
+init.hello:
+	RTS
+code.hello.superman:
+	TSTO #0
+	BOV stack_overflow_error
+; Variables declarations:
+; iniitialisation 
+	LOAD #3, R2
+	STORE R2, 10(GB)
+; Beginning of methode instructions:
+; param
+	LOAD -4(LB), R2
+	CMP 10(GB), R2
+	SGT R2
+	CMP #0, R2
+	BEQ E_sinon.1
+; Instructions
+E_inst.1:
+; exp
+	LOAD 10(GB), R3
+	LOAD R3, R0
+	BRA fin.code.hello.superman
+	BRA E_end.1
+E_sinon.1:
+; param
+	LOAD -3(LB), R3
+	LOAD R3, R0
+	BRA fin.code.hello.superman
+E_end.1:
+	WSTR "[ReturnError] : the method superman is expecting a return but has none."
+	WNL
+	ERROR
+fin.code.hello.superman:
+	RTS
+; end main program
+arithmetic_overflow:
+	WSTR "Arithmetic overflow"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Stack overflow"
+	WNL
+	ERROR
+heap_overflow:
+	WSTR "Heap overflow"
+	WNL
+	ERROR
+division_zero:
+	WSTR "Diviseur ne doit pas egal 0"
+	WNL
+	ERROR
+varaible_non_defini:
+	WSTR "Variable n'est pas défini"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencing null pointer"
+	WNL
+	ERROR

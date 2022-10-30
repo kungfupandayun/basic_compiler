@@ -1,0 +1,28 @@
+/* Description:
+     tester les while imbrique avec  limitation de nombre de registre
+      r = 4
+    Historique:
+      cree le 08/01/2020
+    resultat attendu:
+    10
+    18
+
+*/
+
+{
+    int x = 0;
+    int y = 1;
+    int a = 0;
+    while (a < 10) // 8 fois ici
+    {
+      a = a + 1;
+      while (a < 2){
+        a = a +2; // a executer une seul fois
+        y = 10;
+      }
+      y = y + 1;
+    }
+    println(a); // a = 10
+    println(y); // y = 18
+
+}

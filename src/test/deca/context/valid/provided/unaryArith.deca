@@ -1,0 +1,12 @@
+/* Description:
+     tester declaration de variable
+
+    Historique:
+      cree le 08/01/2020
+*/
+{
+   int x =2 ;
+   float y ;
+
+   y = 0.5;
+}

@@ -1,0 +1,13 @@
+/* Description:
+     tester class qui possede de field de visibility different
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+   int x;
+   private float y;
+
+
+   }

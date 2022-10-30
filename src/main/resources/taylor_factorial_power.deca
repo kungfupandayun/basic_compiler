@@ -1,0 +1,21 @@
+ {
+
+        int j=1;
+        int indice=4;
+        float rad=2.0;
+        float val=1;
+        float factorial=1;
+        while(j<=indice){
+          val=val*rad;
+          factorial=factorial*j;
+          j=j+1;
+          println(j);
+          println(factorial);
+        }
+
+
+          println("power val=> ",val);
+          println("factorial val=> ",factorial);
+
+
+ } 

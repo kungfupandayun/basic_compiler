@@ -1,0 +1,13 @@
+// Description:
+//    Programme utilisant une expr.
+//
+// Resultats:
+//    Hello
+//
+// Historique:
+//    cree le 01/01/2020
+
+{
+    float y;
+    y = 0.1;
+  }

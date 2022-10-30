@@ -1,0 +1,15 @@
+// Description:
+//   Assign d'un literal à un entier
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 14/01/2020
+
+{
+      //float x;
+      //x = 5;
+      float ab;
+      ab = 35;
+}

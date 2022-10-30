@@ -1,0 +1,16 @@
+/* Description:
+    Tester le cas où le return n'est pas du bon type.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+
+*/
+
+class Test{
+    float a;
+    int methode() {
+      return 0.12;
+    }
+}

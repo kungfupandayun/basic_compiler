@@ -1,0 +1,9 @@
+// test pour valider le hello world
+{
+  int entier = 1;
+  float y = 6.8;
+  println("Langage sans Objet Minimal","COLL");
+  print("la on affiche les float ", y);
+  print("les entier ici",entier);
+
+}

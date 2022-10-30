@@ -1,0 +1,17 @@
+/* Description:
+    Lire un entier et afficher sa valeur dans l'ecran
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    le même nombre à l'entréé
+
+*/
+
+
+
+{
+  int a;
+  a = readInt();
+  println("l'entier à l'entrée est ", a);
+}

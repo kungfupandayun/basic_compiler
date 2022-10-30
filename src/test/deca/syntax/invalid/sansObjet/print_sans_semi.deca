@@ -1,0 +1,12 @@
+/* Description:
+    tests de programme lexi correct, syntax incorrect
+
+ Resultats:
+    ligne 12: Erreur,sans point virgule
+
+ Historique:
+    cree le 10/01/2020
+*/
+{
+print(22)
+}

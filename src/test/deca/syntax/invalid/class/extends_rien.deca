@@ -1,0 +1,16 @@
+/*
+	Description: extends rien 
+
+	Resultat syntaxiquement ivalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+class a extends {
+	
+	int y;
+}
+

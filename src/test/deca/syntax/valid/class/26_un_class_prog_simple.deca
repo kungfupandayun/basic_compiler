@@ -1,0 +1,23 @@
+/*
+	Description: test l'ordre class -> main 
+
+	Resultat: syntaxiquement correct
+		  afficher "hello world"
+
+	Date:20/1/2020
+	
+
+*/
+class string extends int 
+{
+	
+	 int xyz=lokjjj;
+
+}
+
+
+{
+	print("hello world");
+
+}
+

@@ -1,0 +1,15 @@
+/* Description:
+     tester class qui herite d'autre class
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+   class A {
+
+
+   }
+
+   class B extends C {
+
+   }

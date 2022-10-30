@@ -1,0 +1,17 @@
+/*
+	Test => Expression literal valide
+
+	Résultat=> syntaxe valid, context valid
+
+	Date=>	17/1/2020
+*/
+
+{
+	1;
+	2.0;
+	"abcd";
+	true;
+	false;
+	this;
+	null;
+}

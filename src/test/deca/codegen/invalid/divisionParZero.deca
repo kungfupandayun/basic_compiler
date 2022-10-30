@@ -1,0 +1,13 @@
+/* Description:
+    Tester une division par zero
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu: arithmetic overflow
+
+
+*/
+{
+	int y = (1+2+3+4+5) - (1+2+3+4+5);
+	int x = 7/y;
+}

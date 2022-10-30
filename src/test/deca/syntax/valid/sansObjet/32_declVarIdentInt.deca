@@ -1,0 +1,13 @@
+/* Description:
+    Test du programme sur l'utilisation de
+      decl_var-->asign_expr-->Ident = Literal ( INT)
+
+
+
+ Historique:
+    cree le 13/01/2020
+*/
+
+{
+        float y = z = 3;
+}

@@ -1,0 +1,14 @@
+/* Description:
+      teste la régle (3.43) class doit être diffenrent de null
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+
+class A {
+    int a;
+  }
+{
+  this.a; // erreur a ce niveau
+}

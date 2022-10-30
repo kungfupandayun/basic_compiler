@@ -1,0 +1,18 @@
+/* Description:
+    Programme minimaliste utilisant println.
+
+ Resultats:
+    Hello
+
+ Historique:
+    cree le 01/01/2020
+*/
+
+{
+	float x=0xaac.bcp-23f;
+	int z=235;
+        printx(x);
+	printx(z);
+      	printlnx(x);
+	printlnx(z);
+}

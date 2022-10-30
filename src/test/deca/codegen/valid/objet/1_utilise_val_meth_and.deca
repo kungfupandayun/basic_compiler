@@ -1,0 +1,23 @@
+/*
+	Utilisation des variables déclaré avec &&
+*/
+
+class A{
+
+	void hello(boolean a,boolean b){
+		
+		boolean c=true;
+		boolean d=true;
+		if(c&&d)
+		{println("hello");}
+		else{print("erreur");}
+		
+		
+	}
+}
+
+{
+A a=new A();
+a.hello(false,false);
+
+}

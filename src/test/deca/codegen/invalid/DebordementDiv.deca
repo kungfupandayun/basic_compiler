@@ -1,0 +1,13 @@
+/* Description:
+    Tester une débordement de flotant dans la division.
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu: arithmetic overflow
+
+
+*/
+{
+	float y = 0.3;
+	float  x = 2147483647/y;
+}

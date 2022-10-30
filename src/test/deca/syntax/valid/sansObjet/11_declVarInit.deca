@@ -1,0 +1,16 @@
+/* Description:
+    Test du programme sur utilisation de
+        decl_var avec = expr
+
+
+
+     Historique:
+        cree le 13/01/2020
+*/
+
+{
+        int x = 6;
+        float y = 7;
+        string s = "Hello";
+
+}

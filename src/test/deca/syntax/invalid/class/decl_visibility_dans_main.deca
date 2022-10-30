@@ -1,0 +1,18 @@
+/*
+	Description: declaration une visibility dans main
+
+	Resultat syntaxiquement invalid
+
+	Date: 20/01/2020
+
+*/
+
+
+
+{
+	
+
+	protected int z= 23;
+
+
+}

@@ -1,0 +1,23 @@
+/* Description:
+    teste la regle (3.17)  de la vérification contextuelles
+    Declaration d'une variable avec un type qui ne coresspond a une variableDefinition;
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int a;
+  float b;
+  int methode(int d, float e){
+    int a;
+    return a;
+  }
+  void t() {
+    int c = B; // B est une class est non pas une variable
+  }
+
+}
+class B {
+
+}

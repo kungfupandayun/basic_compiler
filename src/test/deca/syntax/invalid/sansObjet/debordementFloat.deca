@@ -1,0 +1,9 @@
+// Description:
+//    tests de programme incorrect syntaxiquement (foat trop long) mais correct lexicalment
+//
+// Historique:
+//    cree le 22/01/2020
+
+{
+float a = 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111.07;
+}

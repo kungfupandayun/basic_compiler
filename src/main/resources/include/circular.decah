@@ -1,0 +1,12 @@
+/* Description:
+    Ce fichier est utiliser pour un test de syntaxe incorrecte
+    Circular Include
+
+ Resultats:
+
+
+ Historique:
+    cree le 10/01/2020
+*/
+
+#include "circular.decah"

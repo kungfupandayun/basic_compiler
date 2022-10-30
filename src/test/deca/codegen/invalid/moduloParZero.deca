@@ -1,0 +1,13 @@
+/* Description:
+    Tester un entier modulo zero
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu: arithmetic overflow
+
+
+*/
+{
+	int x = 10%0;
+  print(x);
+}

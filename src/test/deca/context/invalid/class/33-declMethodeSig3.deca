@@ -1,0 +1,25 @@
+/* Description:
+    teste la regle (2.7) en cas de redéclaration de méthode valid (la même signature et le même type de retour)
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  float doNothing(int a, int b, float c, C c, D d){}
+
+}
+
+class B extends A {
+  float doNothing(int a, int b, float e, C c, Object d){}
+}
+
+class C extends A{
+  float doNothing(int a, int b, float e, D c, Object d){} // D is not a C
+}
+class D extends B{
+}
+
+class E extends D {
+
+}

@@ -1,0 +1,14 @@
+// Description:
+//   Déclaration d'un float avec son Initialisation
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      int x = 9;
+      int y = 10;
+      print(x*5*y);
+}

@@ -1,0 +1,12 @@
+/* Description:
+    Tester la declaration d'un int
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+{
+	int x;
+  print("ok");
+}

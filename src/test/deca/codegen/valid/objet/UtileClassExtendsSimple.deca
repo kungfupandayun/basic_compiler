@@ -1,0 +1,31 @@
+/* Description:
+    Extends d'un class et son methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	erreur
+	ok
+
+*/
+
+class Point2D {
+	void diag() {
+		println("erreur");
+	}
+}
+
+class Point3D extends Point2D {
+	void diag() {
+		println("ok");
+	}
+}
+{
+	Point2D p1;
+	Point3D p3;
+	p1 = new Point2D();
+	p1.diag();
+	// p1.x = 1; p1.y = 1;
+	p3 = new Point3D();
+	p3.diag();
+}

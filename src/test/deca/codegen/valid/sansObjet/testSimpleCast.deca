@@ -1,0 +1,25 @@
+/* Description:
+    Test un simple cast
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+*/
+
+
+
+{
+
+  float f = 5;
+  int i = 5;
+  f = f + (float) (i);
+  if (f== 10){
+    print("ok");
+  } else {
+    print("erreur");
+  }
+
+
+
+}

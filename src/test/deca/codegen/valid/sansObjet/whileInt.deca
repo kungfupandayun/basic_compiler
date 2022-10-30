@@ -1,0 +1,31 @@
+/* Description:
+    Tester un seul While
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+
+*/
+
+
+
+{
+  int y = 10;
+  while (y > 0){
+    y = y - 1;
+  }
+  if ( y > 0){
+    println("erreur");
+  } else if ( y  < 2){
+    if (y == 0){
+      println("ok");
+    } else {
+      println("erreur");
+    }
+  } else {
+    println("erreur");
+  }
+
+}

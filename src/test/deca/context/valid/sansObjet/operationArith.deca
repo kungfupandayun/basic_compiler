@@ -1,0 +1,17 @@
+// Description:
+//   No operation test
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 14/01/2020
+
+{
+
+    int x = 9+10+11;
+    int y;
+    y = x*10;
+
+
+}

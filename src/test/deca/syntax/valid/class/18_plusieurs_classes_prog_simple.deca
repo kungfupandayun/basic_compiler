@@ -1,0 +1,35 @@
+/*
+	Description: tests plusieurs class un main
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+class a extends b {
+
+	int lala=1;
+}
+
+
+class b{
+
+	int lala=1;
+}
+
+
+class c extends a{
+ 	
+	 int lala=pasimportance;
+
+}
+
+
+{
+
+
+
+	print(lala);
+
+}

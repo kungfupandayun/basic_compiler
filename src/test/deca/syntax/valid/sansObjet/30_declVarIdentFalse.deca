@@ -1,0 +1,12 @@
+/* Description:
+    Test du programme  sur l'utilisation de
+     decl_var-->asign_expr-->Ident = Literal (false)
+
+
+ Historique:
+    cree le 13/01/2020
+*/
+
+{
+        int y = z = false;
+}

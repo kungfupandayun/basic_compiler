@@ -1,0 +1,14 @@
+/* Description:
+     tester l'affichage de sin,cos,asin,acos,ulp avec variable de type bool
+     Erreur attendu
+
+    Historique:
+      cree le 08/01/2020
+*/
+{
+   boolean x =2 ;
+   float y ;
+
+   sin(x);
+
+}

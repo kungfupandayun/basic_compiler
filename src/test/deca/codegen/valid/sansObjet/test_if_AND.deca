@@ -1,0 +1,44 @@
+/* Description:
+    Tester condition avec ET operation
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+    ok
+    ok
+    ok
+
+
+*/
+
+{	int x;
+	if(false && false){
+		println("erreur");
+	} else{ 
+		x = 1;
+		println("ok");
+	}
+
+	if(true && false){
+		println("erreur");
+	} else{ 
+		x = 1;
+		println("ok");
+	}
+
+	if(false && true){
+		println("erreur");
+	} else{ 
+		x = 1;
+		println("ok");
+	}
+
+	if(true && true){
+		println("ok");
+	} else{ 
+		x = 1;
+		println("erreur");
+	}
+
+}

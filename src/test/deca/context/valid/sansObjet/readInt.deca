@@ -1,0 +1,14 @@
+// Description:
+//   Lire un entier ou un Float
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 14/01/2020
+
+{
+    readInt();
+    readFloat();
+
+}

@@ -1,0 +1,14 @@
+// Description:
+//   Test d'un cast float
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      int x = 6;
+      float y;
+      y = x;
+}

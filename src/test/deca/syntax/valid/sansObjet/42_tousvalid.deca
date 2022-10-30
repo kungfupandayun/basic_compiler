@@ -1,0 +1,32 @@
+/*
+	Test => DeclVar
+		Initialisation
+		Assign_Var
+		Print_Var
+
+	Résultat=> syntaxe valid, context valid	
+*/
+
+{
+	int a;
+	float b;
+	string c;
+	boolean d;
+	int e=23;
+	float f=0.0;
+	string g="test of type and initialisation";
+	boolean h=true;
+	a=e;
+	b=f;
+	c=g;
+	d=h;
+	print(a);
+	print(b);
+	print(c);
+	print(d);
+	println(e);
+	println(f);
+	println(g);
+	println(h);
+	
+}

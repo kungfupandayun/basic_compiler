@@ -1,0 +1,21 @@
+/* Description:
+    Tester l'operateur 'OR'
+
+    Historique:
+      cree le 24/01/2020
+    Sortie attendu:
+
+
+*/
+
+
+
+{
+  boolean expr;
+  expr = true || false;
+  if (expr){
+    println("ok");
+  }else {
+    println("erreur");
+  }
+}

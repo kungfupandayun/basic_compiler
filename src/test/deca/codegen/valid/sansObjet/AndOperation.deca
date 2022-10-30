@@ -1,0 +1,21 @@
+/* Description:
+    And et Or
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+
+*/
+
+
+
+{
+  if (true && !(false)){
+    println("ok");
+  } else {
+    println("erreur" );
+  }
+
+}

@@ -1,0 +1,37 @@
+
+/* Description:
+    Tester condition WHILE avec ET operation
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+
+*/
+
+{	int x=5;
+	
+	//cas false false
+	while(false && x!=5){
+		println("erreur1");
+	} 
+
+	
+	//cas false true
+	while(false && x==5){
+		println("erreur2");
+	} 
+	
+	//cas true false
+	while(x==5 && false){
+		println("erreur3");
+	} 
+
+	//cas true true
+	while(x==5 && true){
+		println("ok");
+		x=7;
+	}
+}
+

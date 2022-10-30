@@ -1,0 +1,18 @@
+// Description:
+//    Appel d'une méthode inexistante
+//
+// Resultats:
+//    undefined method
+// 
+// Historique:
+//    cree le 01/01/2016
+
+class A {
+
+}
+
+{
+	A a;
+	a.a();
+}
+

@@ -1,0 +1,15 @@
+// Description:
+//   Conversion en float
+//
+// Resultats: syntax valid
+//
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+      float y;
+      int x = 5;
+      y = (float) (x);
+
+}

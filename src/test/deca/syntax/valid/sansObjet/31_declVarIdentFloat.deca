@@ -1,0 +1,11 @@
+/* Description:
+    Programme  test sur l'uitilisation de
+    decl_var-->asign_expr-->Ident = Literal (FLOAT)
+
+ Historique:
+    cree le 13/01/2020
+*/
+
+{
+        int y = z = 0.5;
+}

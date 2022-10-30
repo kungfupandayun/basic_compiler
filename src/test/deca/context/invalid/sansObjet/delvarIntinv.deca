@@ -1,0 +1,12 @@
+// Description:
+//    Affectation et typage
+//
+// Resultats:
+//    Ligne 15: déclaration de type incompatibles.
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+   int a = "hello";
+}

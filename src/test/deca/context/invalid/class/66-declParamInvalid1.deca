@@ -1,0 +1,18 @@
+/* Description:
+    teste la regle (3.12) (3.13) de la vérification contextuelles
+    Déclaration de paramètres qui n'est pas prédefinie
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int methode(C a, B b, D c, C d, A a){} // Erreur au nivau de D le type D est inconnu
+}
+
+class C {
+
+}
+class B {
+
+}

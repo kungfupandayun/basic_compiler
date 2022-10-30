@@ -1,0 +1,456 @@
+; start main program
+	TSTO #5
+	BOV stack_overflow_error
+	ADDSP #33
+; La table des Méthode de Object
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Main program
+; Variables declarations:
+; iniitialisation 
+	LOAD #0x1.19999ap-1, R2
+	STORE R2, 3(GB)
+; iniitialisation 
+	LOAD #0x1.36e9dcp-1, R2
+	STORE R2, 4(GB)
+; iniitialisation 
+	LOAD #0x1.921fb6p0, R2
+	STORE R2, 5(GB)
+; iniitialisation 
+; exp
+	LOAD 4(GB), R2
+	STORE R2, 6(GB)
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 7(GB)
+; iniitialisation 
+	LOAD #0x1.0p0, R2
+	STORE R2, 9(GB)
+; iniitialisation 
+	LOAD #0, R2
+	STORE R2, 10(GB)
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 11(GB)
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 12(GB)
+; iniitialisation 
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 16(GB)
+; iniitialisation 
+	LOAD #0x1.921fb6p-1, R2
+	STORE R2, 17(GB)
+; iniitialisation 
+	LOAD #0x1.dac67p-2, R2
+	STORE R2, 18(GB)
+; iniitialisation 
+	LOAD #0x1.f5b76p-3, R2
+	STORE R2, 19(GB)
+; iniitialisation 
+	LOAD #0x1.fd5baap-4, R2
+	STORE R2, 20(GB)
+; iniitialisation 
+	LOAD #0x1.ff55bcp-5, R2
+	STORE R2, 21(GB)
+; iniitialisation 
+	LOAD #0x1.ffd55cp-6, R2
+	STORE R2, 22(GB)
+; iniitialisation 
+	LOAD #0x1.fff556p-7, R2
+	STORE R2, 23(GB)
+; iniitialisation 
+	LOAD #0x1.fffd56p-8, R2
+	STORE R2, 24(GB)
+; iniitialisation 
+	LOAD #0x1.ffff56p-9, R2
+	STORE R2, 25(GB)
+; iniitialisation 
+	LOAD #0x1.ffffd6p-10, R2
+	STORE R2, 26(GB)
+; iniitialisation 
+	LOAD #0x1.fffff6p-11, R2
+	STORE R2, 27(GB)
+; iniitialisation 
+	LOAD #0x1.fffffep-12, R2
+	STORE R2, 28(GB)
+; iniitialisation 
+	LOAD #0x1.0p-12, R2
+	STORE R2, 29(GB)
+; iniitialisation 
+	LOAD #0x1.0p-13, R2
+	STORE R2, 30(GB)
+; iniitialisation 
+	LOAD #0x1.0p-14, R2
+	STORE R2, 31(GB)
+; iniitialisation 
+	LOAD #0x1.0p-15, R2
+	STORE R2, 32(GB)
+; iniitialisation 
+	LOAD #1, R2
+	STORE R2, 33(GB)
+; Beginning of main instructions:
+; exp
+	LOAD 3(GB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SLT R2
+	CMP #0, R2
+	BEQ E_sinon.1
+; Instructions
+E_inst.1:
+; assign
+	LOAD #1, R3
+	OPP R3, R3
+	STORE R3, 33(GB)
+; assign
+; exp
+	LOAD 3(GB), R3
+	OPP R3, R3
+	STORE R3, 3(GB)
+	BRA E_end.1
+E_sinon.1:
+E_end.1:
+	BRA E_cond.2
+E_debut.2:
+; assign
+; exp
+	LOAD 11(GB), R2
+	MUL 5(GB), R2
+	BOV arithmetic_overflow
+	LOAD #90, R3
+	FLOAT R3, R3
+	DIV R3, R2
+	BOV arithmetic_overflow
+	STORE R2, 8(GB)
+; assign
+	LOAD #0, R2
+	FLOAT R2, R2
+	STORE R2, 7(GB)
+; assign
+; exp
+	LOAD 4(GB), R2
+	STORE R2, 6(GB)
+; assign
+	LOAD #0, R2
+	STORE R2, 10(GB)
+; assign
+	LOAD #1, R2
+	FLOAT R2, R2
+	STORE R2, 9(GB)
+	BRA E_cond.3
+E_debut.3:
+; exp
+	LOAD 10(GB), R2
+	CMP #0, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.4
+; Instructions
+E_inst.4:
+; assign
+; exp
+	LOAD 17(GB), R3
+	STORE R3, 16(GB)
+	BRA E_end.4
+E_sinon.4:
+E_end.4:
+; exp
+	LOAD 10(GB), R2
+	CMP #1, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.5
+; Instructions
+E_inst.5:
+; assign
+; exp
+	LOAD 18(GB), R3
+	STORE R3, 17(GB)
+	BRA E_end.5
+E_sinon.5:
+E_end.5:
+; exp
+	LOAD 10(GB), R2
+	CMP #2, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.6
+; Instructions
+E_inst.6:
+; assign
+; exp
+	LOAD 19(GB), R3
+	STORE R3, 18(GB)
+	BRA E_end.6
+E_sinon.6:
+E_end.6:
+; exp
+	LOAD 10(GB), R2
+	CMP #3, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.7
+; Instructions
+E_inst.7:
+; assign
+; exp
+	LOAD 20(GB), R3
+	STORE R3, 19(GB)
+	BRA E_end.7
+E_sinon.7:
+E_end.7:
+; exp
+	LOAD 10(GB), R2
+	CMP #4, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.8
+; Instructions
+E_inst.8:
+; assign
+; exp
+	LOAD 21(GB), R3
+	STORE R3, 20(GB)
+	BRA E_end.8
+E_sinon.8:
+E_end.8:
+; exp
+	LOAD 10(GB), R2
+	CMP #5, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.9
+; Instructions
+E_inst.9:
+; assign
+; exp
+	LOAD 22(GB), R3
+	STORE R3, 21(GB)
+	BRA E_end.9
+E_sinon.9:
+E_end.9:
+; exp
+	LOAD 10(GB), R2
+	CMP #6, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.10
+; Instructions
+E_inst.10:
+; assign
+; exp
+	LOAD 23(GB), R3
+	STORE R3, 22(GB)
+	BRA E_end.10
+E_sinon.10:
+E_end.10:
+; exp
+	LOAD 10(GB), R2
+	CMP #7, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.11
+; Instructions
+E_inst.11:
+; assign
+; exp
+	LOAD 24(GB), R3
+	STORE R3, 23(GB)
+	BRA E_end.11
+E_sinon.11:
+E_end.11:
+; exp
+	LOAD 10(GB), R2
+	CMP #8, R2
+	SEQ R2
+	CMP #0, R2
+	BEQ E_sinon.12
+; Instructions
+E_inst.12:
+; assign
+; exp
+	LOAD 25(GB), R3
+	STORE R3, 24(GB)
+	BRA E_end.12
+E_sinon.12:
+E_end.12:
+; exp
+	LOAD 8(GB), R2
+	LOAD #0, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	SGE R2
+	CMP #0, R2
+	BEQ E_sinon.13
+; Instructions
+E_inst.13:
+; assign
+; exp
+	LOAD 4(GB), R3
+; exp
+	LOAD 7(GB), R4
+	MUL 9(GB), R4
+	BOV arithmetic_overflow
+	SUB R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 13(GB)
+; assign
+; exp
+	LOAD 7(GB), R3
+; exp
+	LOAD 4(GB), R4
+	MUL 9(GB), R4
+	BOV arithmetic_overflow
+	ADD R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 14(GB)
+; assign
+; exp
+	LOAD 8(GB), R3
+	SUB 25(GB), R3
+	BOV arithmetic_overflow
+	STORE R3, 15(GB)
+	BRA E_end.13
+E_sinon.13:
+; assign
+; exp
+	LOAD 4(GB), R3
+; exp
+	LOAD 7(GB), R4
+	MUL 9(GB), R4
+	BOV arithmetic_overflow
+	ADD R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 13(GB)
+; assign
+; exp
+	LOAD 7(GB), R3
+; exp
+	LOAD 4(GB), R4
+	MUL 9(GB), R4
+	BOV arithmetic_overflow
+	SUB R4, R3
+	BOV arithmetic_overflow
+	STORE R3, 14(GB)
+; assign
+; exp
+	LOAD 8(GB), R3
+	ADD 25(GB), R3
+	BOV arithmetic_overflow
+	STORE R3, 15(GB)
+E_end.13:
+; assign
+; exp
+	LOAD 13(GB), R2
+	STORE R2, 4(GB)
+; assign
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 7(GB)
+; assign
+; exp
+	LOAD 15(GB), R2
+	STORE R2, 8(GB)
+; assign
+; exp
+	LOAD 9(GB), R2
+	MUL #0x1.0p-1, R2
+	BOV arithmetic_overflow
+	STORE R2, 9(GB)
+; assign
+; exp
+	LOAD 10(GB), R2
+	ADD #1, R2
+	STORE R2, 10(GB)
+E_cond.3:
+; exp
+	LOAD 10(GB), R2
+	CMP #8, R2
+	SLE R2
+	CMP #1, R2
+	BEQ E_debut.3
+; assign
+; exp
+	LOAD 14(GB), R2
+	STORE R2, 12(GB)
+; assign
+; exp
+	LOAD 11(GB), R2
+	ADD #0x1.47ae14p-7, R2
+	BOV arithmetic_overflow
+	STORE R2, 11(GB)
+E_cond.2:
+; exp
+	LOAD 12(GB), R2
+; exp
+	LOAD 3(GB), R3
+	SUB #0x1.47ae14p-7, R3
+	BOV arithmetic_overflow
+	CMP R3, R2
+	SGE R2
+; exp
+	LOAD 12(GB), R3
+; exp
+	LOAD 3(GB), R4
+	ADD #0x1.47ae14p-7, R4
+	BOV arithmetic_overflow
+	CMP R4, R3
+	SLE R3
+	MUL R3, R2
+	CMP #0, R2
+	SEQ R2
+; exp
+	LOAD 11(GB), R3
+	CMP #0x1.68p6, R3
+	SLE R3
+	MUL R3, R2
+	CMP #1, R2
+	BEQ E_debut.2
+	WSTR "degre=>"
+; exp
+	LOAD 11(GB), R2
+; exp
+	LOAD 33(GB), R3
+	FLOAT R3, R3
+	MUL R3, R2
+	BOV arithmetic_overflow
+	LOAD R2, R1
+	WFLOAT
+	WNL
+	HALT
+init.Object:
+	RTS
+code.Object.equals:
+; end main program
+arithmetic_overflow:
+	WSTR "Arithmetic overflow"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Stack overflow"
+	WNL
+	ERROR
+heap_overflow:
+	WSTR "Heap overflow"
+	WNL
+	ERROR
+division_zero:
+	WSTR "Diviseur ne doit pas egal 0"
+	WNL
+	ERROR
+varaible_non_defini:
+	WSTR "Variable n'est pas défini"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencing null pointer"
+	WNL
+	ERROR

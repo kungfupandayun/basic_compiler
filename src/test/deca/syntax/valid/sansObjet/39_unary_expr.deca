@@ -1,0 +1,16 @@
+/*
+	Test =>  unary expression valide
+
+	Résultat=> syntaxe valid, context valid
+
+	Date=>	17/1/2020
+*/
+
+
+{
+	-x;
+	!y;
+	--1;
+	!!2;
+
+}

@@ -1,0 +1,32 @@
+/* Description:
+    un exemple d'un programme utilisant uen déclaration de deux
+    methode avec l'uutilisation d'une méthode à l'intérieur de l'autre
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+class A {
+    protected int x;
+    protected float y;
+
+    void setX(int a){
+      if (a != 0){
+        this.x = a;
+      } else {
+        println("x doiit être different de zero");
+      }
+    }
+
+    void setXY(int a, float b){
+      this.setX(a);
+      this.y = b;
+    }
+}
+{
+    A a = new A();
+    a.setXY(5, 6.6);
+    a.setXY(0, 0);
+}

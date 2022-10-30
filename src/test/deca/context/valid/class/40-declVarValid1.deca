@@ -1,0 +1,35 @@
+/* Description:
+    teste la regle (3.16) (3.17) de la vérification contextuelles
+    Déclaration des meme variable mais dans deux methode differentes
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int a;
+  int b;
+  void methode1(int a,int b){   //chaque methode a son propre EnvironmentExp
+    int c;
+    float d;
+    A e;
+    Object f;
+    B g;
+    C h;
+  }
+  void methode2(int a){  //chaque methode a son propre EnvironmentExp
+    int c;
+    float d;
+    A e;
+    Object f;
+    B g;
+    C h;
+  }
+
+}
+class B extends A{
+
+}
+class C extends B{
+
+}

@@ -1,0 +1,18 @@
+/* Description:
+    Tester l'affectation d'une classe à un float.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+
+*/
+
+class Test{
+    float a;
+}
+
+{
+	Test classe = new Test();
+  float a = classe;
+}

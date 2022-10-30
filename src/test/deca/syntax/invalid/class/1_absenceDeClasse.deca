@@ -1,0 +1,15 @@
+/* Description:
+    Tester la declaration d'une variable de type classe alors que la classe n'est pas déclarée.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+
+*/
+
+
+
+{
+	Test class = new Test();
+}

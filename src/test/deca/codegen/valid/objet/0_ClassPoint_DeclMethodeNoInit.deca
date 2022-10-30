@@ -1,0 +1,19 @@
+/* Description:
+    Declaration d'un class et un methode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+
+class Point2D {
+	int x; // Abscisse
+	int y; // Ordonnee
+	// Deplace ce point
+	// de a en diagonale.
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+	}
+}	

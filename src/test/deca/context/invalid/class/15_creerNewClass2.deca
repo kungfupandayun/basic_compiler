@@ -1,0 +1,21 @@
+/* Description:
+    test invalide en utilisant new
+    (new suivi de class qui n'existe pas)
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   class A {
+
+    int get(int x){
+
+    }
+
+
+   }
+
+   {
+      A x = new B ();
+
+   }

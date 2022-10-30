@@ -1,0 +1,21 @@
+/* Description:
+    Declaration d'une class
+    la méthode doit envoyer un variable;
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int M() {
+      return 4;
+  }
+
+}
+
+{
+  A a = new A();
+  println();
+  print(a.M());
+
+}

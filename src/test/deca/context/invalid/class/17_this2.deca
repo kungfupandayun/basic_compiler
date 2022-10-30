@@ -1,0 +1,14 @@
+/* Description:
+    test invalide en utilisant this
+    (type de this n'est pas une class)
+
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   {
+    int y;
+    this.x;
+
+   }

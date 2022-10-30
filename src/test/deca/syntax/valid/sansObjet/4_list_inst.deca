@@ -1,0 +1,39 @@
+/*
+	Test => (Inst)*
+
+	Résultat=> syntaxe valid
+
+	Date=>	17/1/2020
+*/
+
+
+{
+
+	//Expr assign avec une valeur lvalue valide
+	int z;
+	z=23;
+
+	//Expr vide
+	23;
+
+	//Expr OU et ET
+	23 || 32;
+	23 && 23;
+	23 || 32 || 12 && 32 ;
+	23 && 32 || 12 && 32 ;
+
+	// Combinaison des operateurs
+	23 > 32;
+	12 < 32;
+	23 > 32  || 12 < 32 && 12>32;
+	23 == 32  || 12 != 32 && 12==32;
+	23 <= 32  || 12 >= 32 && 12>=32 ;
+
+	i;
+	xyz(23 > 32  || 12 < 32 && 12>32);
+	(23 > 32  || 12 < 32 && 12>32);
+	readInt();
+	readFloat();
+
+
+}

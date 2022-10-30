@@ -1,0 +1,28 @@
+/* Description:
+    Utilisation d'un méthode
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+	p1.x = 3
+*/
+
+class Point2D {
+	int x=1; // Abscisse
+	int y=2; // Ordonnee
+	// Deplace ce point
+	// de a en diagonale.
+	void diag(int a) {
+		x = x + a;
+		y = y + a;
+		print(x);
+	}
+}
+
+{	
+	Point2D p1;
+	p1 = new Point2D();
+	p1.x = 2;
+	p1.diag(1);
+	println("p1.x = ", p1.x);
+}	

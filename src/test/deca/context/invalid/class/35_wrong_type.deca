@@ -1,0 +1,15 @@
+// Description:
+//    Déclaration d'une fonction int mais avec return boolean
+//
+// Resultats:
+//    wrong type on return
+
+class A {
+	int a() {
+		return false;
+	}
+}
+
+{
+}
+

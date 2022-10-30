@@ -1,0 +1,12 @@
+/* Description:
+    test invalide en utilisant this ( rien ne correspond à this)
+
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   {
+    this.x;
+
+   }

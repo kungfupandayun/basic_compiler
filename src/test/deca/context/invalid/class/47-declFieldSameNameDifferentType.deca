@@ -1,0 +1,15 @@
+/* Description:
+     teste la régle (2.4) Déclaration de field plusieur fois avec different type
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  B class1;
+  int class1;
+}
+
+class B {
+
+}

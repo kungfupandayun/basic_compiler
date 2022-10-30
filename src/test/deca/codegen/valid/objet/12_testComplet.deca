@@ -1,0 +1,32 @@
+/* Description:
+    le test qui mélange certaines utilisation pour objet et sans objet
+
+    Historique:
+      cree le 23/01/2020
+*/
+
+class A {
+
+  boolean M = false;
+  boolean getM() {
+      return M;
+  }
+
+}
+
+class B extends A {
+  int a =1;
+  boolean M = true;
+  boolean getM(){
+    return M;
+  }
+}
+
+{
+  A a= new A();
+  B b= new B();
+
+  if (!(a.getM()&& b.getM())){
+    println("Bravo!");
+  }
+}

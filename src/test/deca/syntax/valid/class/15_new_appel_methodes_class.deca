@@ -1,0 +1,16 @@
+/*
+	Description: test syntax new et l'appelation des methodes
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+
+{
+	A a=new A();
+	priintln("a.getX() = ",a.getX());
+
+}
+

@@ -1,0 +1,24 @@
+/* Description:
+    Tester un seul While avec un flotant
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+
+
+
+{
+  float y = 10;
+  int z = 20;
+  if ((y > 10) && (z == 20)){
+    println("erreur");
+  } else if ((y == 10) && ( z != 20)){
+    println("erreur");
+  } else if ((y == 10) && (z == 20)){
+    println("ok");
+  }
+
+}

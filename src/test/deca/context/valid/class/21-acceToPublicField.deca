@@ -1,0 +1,26 @@
+/* Description:
+    test l'acce au attribut public d'une classe
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendu:
+     decac ne doit afficher rien
+*/
+
+class A {
+    int a = 6;
+    float b = 5.6;
+    }
+
+class B {
+  void acceAttribut(){
+    A a = new A();
+    print(a.a);
+    print(a.b);
+  }
+  }
+
+{
+    B b = new B();
+    b.acceAttribut();
+}

@@ -1,0 +1,22 @@
+/* Description:
+    Declaration d'un class
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+
+*/
+
+class Point2D {
+	void m(int a){
+		if (a > 0) {
+			println("ok");
+		}		
+	}
+}
+{
+	Point2D p1 = new Point2D();
+	p1.m(1);
+}
+

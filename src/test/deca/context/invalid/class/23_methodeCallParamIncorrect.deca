@@ -1,0 +1,25 @@
+/* Description:
+    test invalide en utilisant methodeCall
+    (la methode appelé n'a pas un bon parametre)
+
+
+
+    Historique:
+      cree le 18/01/2020
+*/
+
+   class A {
+    int y;
+
+      void setY( int x) {
+        this.y = x;
+      }
+
+   }
+
+
+{
+   A a = new A ();
+   boolean x;
+   a.setY(x);
+}

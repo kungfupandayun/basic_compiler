@@ -1,0 +1,17 @@
+/* Description:
+    Test de toutes les déclarations de variables
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+    ok
+*/
+
+
+
+{
+  int x,y,z;
+  float a,b,c;
+  boolean k;
+  println("ok");
+}

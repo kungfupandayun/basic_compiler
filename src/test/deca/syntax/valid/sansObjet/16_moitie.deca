@@ -1,0 +1,10 @@
+/*
+  Description: l'example donnée dans le poly page 15
+
+
+*/
+{
+   int x ;
+   x=readInt() ;
+   println(0.5*(x*x)) ;
+}

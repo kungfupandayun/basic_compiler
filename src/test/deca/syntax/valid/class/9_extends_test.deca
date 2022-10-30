@@ -1,0 +1,17 @@
+/*
+	Description: A class extends to another
+
+	Resultat: 1 
+
+	Date:20/1/2020
+	
+
+*/
+
+class A extends B
+{
+	 void hello()
+	{int x=1;
+	 print(x);
+	}
+}

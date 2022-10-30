@@ -1,0 +1,19 @@
+/* Description:
+    Print FLOAT
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+
+
+  {
+    //FLOATHEX
+    printlnx(0x9.Ap9f);
+
+    //FLOATDEC
+    print(3.3e-6f);
+
+    print(3.3);
+    println(2323.656);
+  }

@@ -1,0 +1,24 @@
+class Taylor_series{    
+     float power_fact(float rad, int indice){
+
+        int v=23;      
+
+        println("indice=>",indice);
+        return 1;        
+      }
+}
+
+
+{       
+    
+        int k=0;
+        int i=2;
+        float power=0;
+
+        Taylor_series t =new Taylor_series();
+        k=2*i;
+
+        
+        println("val of k=>",k);
+        power=t.power_fact(0,k);
+}

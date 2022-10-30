@@ -1,0 +1,11 @@
+/* Description:
+      teste la régle (2.5) Déclaration d'un champ de type void
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+
+class A {
+    void champ;
+  }

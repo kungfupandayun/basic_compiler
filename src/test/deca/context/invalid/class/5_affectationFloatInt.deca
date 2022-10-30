@@ -1,0 +1,17 @@
+/* Description:
+    Tester l'affectation d'un champs d'une classe par une variable qui n'est pas du bon type.
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+*/
+
+class Test{
+    int a;
+}
+
+{
+	Test classe = new Test();
+  classe.a = 0.1;
+}

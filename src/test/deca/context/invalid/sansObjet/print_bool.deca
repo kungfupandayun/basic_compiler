@@ -1,0 +1,12 @@
+// Description:
+//    Print type invalid
+//
+// Resultats:
+//    Ligne 15: print(type) n'est pas autorisé
+// 
+// Historique:
+//    cree le 01/01/2020
+
+{
+   print(true);
+}

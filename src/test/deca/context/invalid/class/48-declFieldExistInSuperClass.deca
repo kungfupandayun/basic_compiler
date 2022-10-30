@@ -1,0 +1,18 @@
+/* Description:
+     teste la régle (2.4) Déclaration de champ qui existe déja dans la class supérieur, mais qui n'est pas un champ
+
+    Historique:
+      cree le 22/01/2020
+*/
+
+class A {
+  int name;
+  int getName(){ // ici on declare une methode
+    return name;
+  }
+
+}
+
+class B extends A{
+  int getName; // le nouveau champ est définie ici
+}

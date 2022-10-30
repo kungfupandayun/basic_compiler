@@ -1,0 +1,41 @@
+/* Description:
+    Appel d'une méthode avec une signature de type de different (sous-type)
+
+    Historique:
+      cree le 21/01/2020
+    Résultat attendu:
+
+*/
+
+class A {
+  B b;
+  float y;
+  void setB(B b){
+    this.b = b;
+    this.b.afficher();
+  }
+  void setY(float y){
+    this.y = y + 0.1;
+  }
+}
+
+class B extends A {
+
+    void afficher(){
+      println("hello!");
+    }
+}
+class C extends B {
+
+    void afficher(){
+      println("C hello!");
+    }
+}
+{
+  A a = new A();
+  C c = new C();
+  int x = 9;
+  a.setB(c);
+  a.setY(9);
+  println(a.y);
+}

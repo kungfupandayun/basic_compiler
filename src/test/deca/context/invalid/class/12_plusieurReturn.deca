@@ -1,0 +1,23 @@
+/* Description:
+    Tester le cas où le return ne existe pas
+    (Mais on attend un return)
+
+    Historique:
+      cree le 20/01/2020
+    Sortie attendue:
+
+
+*/
+
+class Test{
+    float a;
+    int methode() {
+        return 1;
+        return 2;
+
+    }
+}
+{
+  Test c= new Test();
+  int x = c.methode();
+}

@@ -1,0 +1,28 @@
+/* Description:
+     tester sousClass
+
+    Historique:
+      cree le 17/01/2020
+*/
+
+class A {
+    protected int x ;
+
+}
+
+class B extends A {
+      int y ;
+      void init() {
+
+          y = 0 ;
+      }
+}
+
+class C extends A {
+
+}
+
+{
+  C c = new C();
+  c.init(); // Utiliser une méthode non sur superClass
+}

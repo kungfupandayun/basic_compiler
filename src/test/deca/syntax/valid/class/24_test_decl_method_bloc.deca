@@ -1,0 +1,52 @@
+/*
+	Description: tests declarations declaration methodes dans une class 
+		     avec un blog de programme
+
+	Resultat: syntaxiquement correct
+
+	Date:20/1/2020
+	
+
+*/
+
+
+
+
+class abc{
+
+	int hello( spider man, captain america, pen drive){
+		
+		2+3;
+
+	}
+
+	
+	string hello( spider man, captain america, pen drive){
+		
+		10;
+
+	}
+
+	
+	same hello( spider man, captain america, pen drive){
+		
+		23<123;
+
+	}
+
+
+
+	kitty hello( spider man, captain america, pen drive){
+		
+		23<123;
+
+	}
+
+
+	void hello( spider man, captain america, pen drive){
+		
+		23<123;
+
+	}
+
+}

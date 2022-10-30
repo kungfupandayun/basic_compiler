@@ -1,0 +1,15 @@
+/* Description:
+    declaration d'une class avec les attributs
+     (correct syntaxiquement)
+
+    Historique:
+      cree le 20/01/2020
+*/
+
+
+  class A
+  {
+    int a;
+    float c,b;
+    protected float d,e,f;
+  }

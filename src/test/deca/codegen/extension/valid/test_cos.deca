@@ -1,0 +1,62 @@
+/* Test cosinus dans quatre quadrant 
+    + 4 quadrants val négatives
+    + 2 valeurs plus grandes que pi
+
+ */
+
+
+
+ #include "Math.decah"
+
+ {  
+     Math m=new Math();
+     float a,b,c,d,e,f,g,h,i,j,k,l;
+
+     a= m.cos(0.26);
+     println("val Q1 0.26 =>",a);
+     println("sa val réelle=>","0.966389978");
+
+     b= m.cos(2.223);
+     println("val Q2 2.223 =>",b);
+     println("sa val réelle=>","-0.606939243");
+
+     c= m.cos(3.898);
+     println("val Q3 3.898 =>",c);
+     println("sa val réelle=>","-0.727306383");
+
+     d= m.cos(4.98);
+     println("val Q3 4.98 =>",d);
+     println("sa val réelle=>","0.264428248");
+
+     e= m.cos(-4.98);
+     println("val Q4 -4.98 =>",e);
+     println("sa val réelle=>","0.264428248");
+
+     f= m.cos(-3.898);
+     println("val Q3 -3.898 =>",f);
+     println("sa val réelle=>","-0.727306383");
+
+     g= m.cos(-2.223);
+     println("val Q2 -2.223 =>",g);
+     println("sa val réelle=>","-0.606939243");
+
+     h= m.cos(-0.26);
+     println("val Q1 -0.26 =>",h);
+     println("sa val réelle=>","0.966389978");
+
+     i= m.cos(22.32);
+     println("val 22.32 =>",i);
+     println("sa val réelle=>","-0.946413907");
+
+     j= m.cos(-1210.26);
+     println("val Q1 -1210.26 =>",j);
+     println("sa val réelle=>","-0.733847092");
+
+     k= m.cos(0);
+     println("val cos 0 =>",k);
+     println("sa val réelle=>","1");
+
+     l= m.cos(1.5707963);
+     println("val cos pi/2 =>",l);
+     println("sa val réelle=>","0");
+ }

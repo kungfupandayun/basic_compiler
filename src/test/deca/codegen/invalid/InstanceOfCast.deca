@@ -1,0 +1,22 @@
+/* Description:
+    Extends d'un class et son methode avec un cast invalid
+
+    Historique:
+      cree le 16/01/2020
+    Sortie attendu:
+
+*/
+
+class A {
+	int x = 1; }
+class B extends A {
+	int x = 2; }
+class C extends B {
+	int x = 3; }
+{
+	A a;
+	B b;
+	a = new C();
+	b = (B)(a);
+
+}

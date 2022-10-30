@@ -1,0 +1,23 @@
+#include "Math.decah"
+{       
+
+
+        Math t =new Math();
+	float a,b,c,d,e;
+       
+
+         //a= t._asin(-0.0);
+       // println("val of a=>",a);
+
+         b= t._asin(-0.89);
+        println("val of b=>",b);
+
+         c= t._asin(-0.12);
+        println("val of c=>",c);
+
+         d= t._asin(-0.5);
+        println("val of d=>",d);
+
+ 	e= t._sin(10.43);
+        println("val of d=>",e);
+}

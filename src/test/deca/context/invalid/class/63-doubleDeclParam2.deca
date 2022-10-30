@@ -1,0 +1,15 @@
+/* Description:
+    teste la regle (3.12) de la vérification contextuelles
+    Double Déclaration de paramètres
+
+    Historique:
+      cree le 21/01/2020
+*/
+
+class A {
+  int methode(C c, float c){} // double declaration de c
+}
+
+class C {
+
+}

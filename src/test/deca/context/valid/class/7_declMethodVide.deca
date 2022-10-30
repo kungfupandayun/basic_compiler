@@ -1,0 +1,15 @@
+/* Description:
+     tester class qui possede de method vide
+
+    Historique:
+      cree le 08/01/2020
+*/
+
+   class A {
+
+    int getX (){
+    
+    }
+
+
+   }
